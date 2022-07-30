@@ -1,6 +1,6 @@
 //const { on } = require("nodemon");
-//import * as fs from "fs"
-//const fs = require("fs");
+//import {myVar} from "./Test.js";
+
 function createElement(tag,content,attrs){
     /*
     tag: type of the tag. E.g: p,h1,b
@@ -8,7 +8,7 @@ function createElement(tag,content,attrs){
     attrs: href:, src:, etc. (Must be array)
     */
     var e = ""
-    elem = '<' + tag + '></' + tag + '>'
+    var elem = '<' + tag + '></' + tag + '>'
     if (attrs !== undefined){
         e = $(elem).attr(attrs)
         e.append(content)
@@ -29,6 +29,15 @@ String.prototype.replaceAt = function(index,replacement){
     return this.substring(0,index) + replacement + this.substring(index + 1,this.length);
 }
 
+String.prototype.isspace = function(){
+    for (i = 0; i < this.length; ++i){
+        if (this[i] !== " "){
+            return false;
+        }
+    }
+
+    return true;
+}
 function stringFixer(string){
     string = string.toLowerCase();
     if (string[0] !== "null"){
@@ -102,18 +111,33 @@ function addFood(foodArray){
 
 
 function Test(){
-
-    
-    //$("div").remove(".collapsible");
-    var header = $(createElement("h4","")).appendTo(".collapsible");
-    var div = $(createElement("div","",{"style":"display: none;"})).appendTo(".collapsible");
-    $(createElement("a","Food Name",{"href":"#"})).appendTo(header);
-    $(createElement("p","Content",{"class":"nutrient"})).appendTo(div);
+    $.ajax
+    ({
+        type: 'POST',
+        url: '/Foods',
+        data: {name:"Kazekito"},
+        contentType: 'application/json',
+        datatype: 'json',
+        success : function(){
+            console.log("Post successful");
+        },
+        error : function(){
+            console.log("Post failed");
+        }
+    })
 
 }
 
 function searchFood(){
-    let newUrl = createUrl(document.getElementById("fname").value);
+    var input = document.getElementById("fname").value;
+
+    //If input is blank or filled with whitespace, do nothing.
+    //Else search the database for the food name.
+    if (input.length === 0 || input.isspace()){
+        return;
+    }
+
+    let newUrl = createUrl(input);
     let foodArr = new Array();
     $.ajax
     ({
@@ -129,7 +153,7 @@ function searchFood(){
             addFood(foodArr);
         },
         error : function(){
-            alert("Failed Get");
+            alert("Error: failed to get data from database.");
         }
     });
 }
