@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color:gray;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#foodSearchBar{
+    margin-left: 15%;
+    border-radius: 10px;
+}
+
+.navigationBar{
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.navigationBar a{
+    float:left;
+    display:block;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+}
+
+input[type = text]{
+    width:50%;
+    -webkit-transition:width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+.fas.fa-search {
+    height:inherit;
+    color:black;
+    background-color:lightgray;
+    vertical-align:center;
+    border-style:solid;
+    border:0px 1px 1px 1px;
+}
+
+
+
+.headerCollapsible{
+    color: black;
+    border-style:solid;
+    background-color:lightblue;
+    font-size: 18px;
+    width: 500px;
+    padding: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top:5px;
+    margin-bottom: 0px;
+}
+
+.bar1 {
+    border:5px;
+    color:black;
+}
+
+.bar2 {
+    border:2.5px;
+    color:black;
+}
+
+.collapsible{
+    color:black;
+    padding: 5px;
+}
+
+.divCollapsible{
+    color:black;
+    border: 3px;
+    width: 400px;
+    padding: 2px;
+    border-style:solid;
+}
+
+div.collapsible div.nutrient{
+    padding:2px;
+    color:black;
+    border-top: 1px;
+    font-weight:normal;
+    border-style:solid;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.title{
+    color:black;
+    font-weight:bold;
+    font-size:30px;
+    position:left;
+}
+
+.name, .amountPerServing, .ingredientTitle{
+    color:black;
+    font-weight:bold;
+    position:left;
+}
+
+.collapsibleA{
+    color:blue;
+    font-weight:bold;
+}
+
+.ingredient{
+    color:black;
+    position:left;
+    width:auto;
+    height:auto;
+}
+
+hr.bar1{
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+hr.bar2{
+    border-top: 2.5px solid rgb(0,0,0);
+}
