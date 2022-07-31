@@ -73,7 +73,7 @@ ingredients: #list of ingredients (string)
 function addFood(foodArray){
 
     if (!foodArray.length){
-        $(createElement("div",$(".fname").innerHTML + "Does not exist in database.",{"class":"errorDNE"})).appendTo(".collapsible");
+        $(createElement("div",document.getElementById("fname").value + " does not exist in database.",{"class":"errorDNE"})).appendTo(".collapsible");
         return;
     }
 
@@ -111,21 +111,7 @@ function addFood(foodArray){
 
 
 function Test(){
-    $.ajax
-    ({
-        type: 'POST',
-        url: '/Foods',
-        data: {name:"Kazekito"},
-        contentType: 'application/json',
-        datatype: 'json',
-        success : function(){
-            console.log("Post successful");
-        },
-        error : function(){
-            console.log("Post failed");
-        }
-    })
-
+    console.log("test called");
 }
 
 function searchFood(){
@@ -183,5 +169,18 @@ $(".collapsible").on("click","a",function(e){
     }
     else{
         nextDiv.show();
+    }
+});
+
+
+//Enter Key shortcut for Search bar
+$(document).on('keypress',(e)=>{
+    if (e.which == 13){
+        if ($("#fname").is(":focus")){
+            if($(".collapsible").length){
+                $(".collapsible").empty();
+            }
+            searchFood();
+        }
     }
 });

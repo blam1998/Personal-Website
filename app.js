@@ -28,17 +28,19 @@ router.get("/Foods",(req,res) =>{
 })
 
 router.post("/", async (req,res) =>{
+    //TO-DO: generalize a function to return a Dictionary
     fs.readFile(__dirname+'/html/Home.html','utf-8',function(err,data){
         let buffer = "";
         let decoder = new StringDecoder('utf-8');
         let obj = {};
+
         req.on('data',function(data){
             buffer += decoder.write(data);
         });
-
         req.on('end',function(){
             buffer += decoder.end();
             obj = JSON.parse(buffer);
+            console.log(obj);
         })
     })
 })
