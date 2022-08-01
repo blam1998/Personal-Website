@@ -1,17 +1,28 @@
+
 *{
     margin:0;
     padding:0;
 }
 
+
 body{
-    margin:0;
-    background-color:rgb(71, 55, 161);
+    background-image:url('/background.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:100vw;
+    min-width:100vw;
+    min-height:100vh;
+    height:auto;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
 }
+
 
 .navigationBar{
     overflow: hidden;
     background-color: rgb(0, 0, 0);
+    background-size:inherit;
+    width:inherit;
 }
 
 .navigationBar a{
@@ -24,3 +35,146 @@ body{
     font-size:17px;
     font-weight:bold;
 }
+
+.navAside{
+    background-image:url('/background.jpg');
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.profileName{
+    color:white;
+    text-align:left;
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:42px;
+    width:max-content;
+    height:max-content;
+}
+
+
+.profileDiv{
+    position:fixed;
+    top:10%;
+    background-color:black;
+    border-radius:12px;
+    border:20px solid black;
+    padding: 5px 5px 5px 5px;
+    width: max-content;
+    height: max-content;
+}
+
+.profileName a, .profileName i{
+    width:inherit;
+    height:inherit;
+    color:white;
+    padding: 20px 0px 0px 25px;
+    font-weight:bold;
+    font-size:40px;
+    position:relative;
+}
+
+.projects{
+    text-align:center;
+    align-self:center;
+    top:10%;
+    left:25%;
+    bottom:0;
+    right:0;
+    width:1200px;
+    max-width:60vw;
+    height:auto;
+    font-size:40px;
+    color:black;
+    position:fixed;
+    word-break:break-all;
+    overflow-x:hidden;
+    border:0px 100px 0px 0px;
+}
+
+/*start of collapsible*/
+.projectsCollapsible{
+    color:white;
+    margin:0;
+}
+
+.headerCollapsible{
+    text-align:left;
+    color:white;
+    border:0px;
+    border-color:black;
+    background-color:black;
+    width:max-content;
+    border-radius:20px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.linkCollapsible{
+    font-size:40px;
+    color:inherit;
+    text-decoration:none;
+}
+
+
+.collapsibleContent{
+    text-align:left;
+    color:white;
+    margin:20px 0px 0px 0px;
+    border:20px 20px 20px 20px;
+    padding:0px 20px 20px 20px;
+    border-radius:20px;
+    width:inherit;
+    background-color:black;
+    border-color:black;
+    display:none;
+}
+
+span.languageType, span.when{
+    color:aqua;
+    font-size:18px;
+    padding: 0px 0px 0px 0px;
+}
+
+span.language, span.date{
+    color: white;
+    font-size: 18px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+span.date{
+    margin: 0px 20px 0px 0px;
+}
+
+.description{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.detail li{
+    font-size: 18px;
+    color:white;
+    margin: 10px 0px 0px 0px;
+}
+
+.headerCollapsible a{
+    margin: 0px 20px 0px 0px;
+}
+
+.languages, .otherSkills{
+    font-size:25px;
+    color:white;
+    text-align:center;
+    margin:20px 0px 0px 0px;
+}
+
+.languageName, .skillName{
+    font-size:18px;
+    color:white;
+    text-align:left;
+    margin:5px 0px 0px 0px;
+}
+
+

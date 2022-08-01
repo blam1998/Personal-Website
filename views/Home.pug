@@ -10,10 +10,202 @@ html
         link(rel="stylesheet" href="../home.css")
         <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-    body
+    body(class = "body")
         div(class = "navigationBar")
             a(class = "active" href="/" class = "fas fa-home" title = "Home")                  
             a(href="/Foods") Food Search
+        div(class = "profileDiv")
+            div(class = "profileName") Bao Lam Le H.
+                br
+                a(href = "https://www.linkedin.com/in/bao-lam-le-431175225/" class = "linkedinProfile" target = "_blank")  
+                    i(class = "fab fa-linkedin-in" title = "LinkedIn")
+                a(href = "https://github.com/blam1998?tab=repositories" class = "githubProfile" target = "_blank")
+                    i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+            div(class = "languages") Languages
+                li(class = "languageName") C++/C (Proficient)
+                li(class = "languageName") Java (Proficient)
+                li(class = "languageName") Python (Proficient)
+                li(class = "languageName") Javascript (Proficient)
+            div(class = "otherSkills") Other Skills
+                li(class = "skillName") Amazon S3 
+                li(class = "skillName") Amazon Athena
+                li(class = "skillName") HTML 
+                li(class = "skillName") CSS 
+                li(class = "skillName") Ajax 
+                li(class = "skillName") Jquery 
+
+        div(class = "projects") Projects 
+            div(class = "projectCollapsible")
+                //Each Element
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") Discord Bot
+                    a(href = "https://github.com/blam1998/Corgi-Bot" class = "githubProfile" target = "_blank")
+                        i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 06/2022
+                            span(class = "when") End Date: 
+                            span(class = "date") 06/2022
+                        p(class = "normalP")
+                            //span(class = "languageType") Front-end:
+                            //span(class = "language")  HTMl,CSS
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  Python
+                            span(class = "languageType") Database:
+                            span(class = "language")  Amazon S3
+                            span(class = "languageType") SQL:
+                            span(class = "language")  Amazon Athena
+                        p(class = "description") Uses Amazon Athena to run SQL queries that manipulates data from Amazon S3 to help the Bot with the user commands.
+
+
+                    div(class = "detail")
+                        li A chance game that allows the user to pick a color and the amount of money they 
+                            span want to bet through discord chat. Bot then Queries data from S3 and executes the
+                            span command. If the user wins the bet, the user’s new balance is updated to S3.
+                        li A "Best in Slot" calculator for New World, an online MMORPG, that allows user to
+                            span find the chance of them obtaining a specific item through a craft. The calculator
+                            span queries data from S3 on the Bot’s initial startup and waits for user command. Once
+                            span a user command is invoked, the calculator calculates the probability and return it to
+                            span user via discord chat.
+                        li A music bot that follows a user into a discord voice channel and play, queue, skip or
+                            span stop playing music on demand. All of the user’s commands are called through dis
+                            span cord chat.
+                
+
+
+                //Start new element 2
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") Linux Vulnerabilities Exploit
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 09/2021
+                            span(class = "when") End Date: 
+                            span(class = "date") 12/2021
+                        p(class = "normalP")
+                            //span(class = "languageType") Front-end:
+                            //span(class = "language")  HTMl,CSS
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  C++
+                        p(class = "description") Used old Linux images to gain root access as a normal user. (Done in personal virtual 
+                            span machine)
+
+
+                    div(class = "detail")
+                        li Used use-after-free and list vulnerability to gain root access.
+                        li View Kernel properties and identify its weaknesses (possible Integer overflow) and
+                            span create an exploit to gain root access of a user’s device.
+
+                
+                //Start of element 3
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") 8-Tile Puzzle AI Model
+                    a(href = "https://github.com/blam1998/8-Tile-Puzzle" class = "githubProfile" target = "_blank")
+                        i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 05/2021
+                            span(class = "when") End Date: 
+                            span(class = "date") 06/2021
+                        p(class = "normalP")
+                            //span(class = "languageType") Front-end:
+                            //span(class = "language")  HTMl,CSS
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  C++
+                        p(class = "description") Project to familiarize myself with Artificial Intelligence.
+
+
+                    div(class = "detail")
+                        li Applied A* path finding algorithm with different heuristics to solve 8-tile Puzzle.
+                        li Applied a brute force algorithm to solve the problem as an opportunity to distinguish
+                            span good or bad solutions for Algorithms.
+                
+
+                //start Element 4
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") Personal Website
+                    a(href = "https://github.com/blam1998/Food_Project" class = "githubProfile" target = "_blank")
+                        i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 15/07/2022
+                            span(class = "when") End Date: 
+                            span(class = "date") 31/07/2022
+                        p(class = "normalP")
+                            span(class = "languageType") Front-end:
+                            span(class = "language")  HTMl, CSS, Pug
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  Javascript, Node.js
+                        p(class = "description") A project to learn web development.
+
+
+                    div(class = "detail")
+                        li Personal Website that store resume information, and other projects that are not 
+                            span listed in resume.
+                        li Planning to add a feedback system by mimicking google review.
+                
+
+                //start Element 5
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") Food Nutrition Value
+                    a(href = "https://github.com/blam1998/Food_Project" class = "githubProfile" target = "_blank")
+                        i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 15/07/2022
+                            span(class = "when") End Date: 
+                            span(class = "date") 30/07/2022
+                        p(class = "normalP")
+                            span(class = "languageType") Front-end:
+                            span(class = "language")  HTMl, CSS, Pug
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  Javascript, Node.js
+                        p(class = "description") A project to learn web development.
+
+
+                    div(class = "detail")
+                        li A search engine that queries data from government API and return data to the user.
+                        li I plan to add my own database (Amazon S3) and query information from database so I can get rid of the API's hourly request restriction.
+
+
+
+                //start Element 6
+                h2(class = "headerCollapsible")
+                    a(class = "linkCollapsible" href = "#") MIL interpreter using Bison
+                    a(href = "https://github.com/blam1998/BISON-Compiler" class = "githubProfile" target = "_blank")
+                        i(class = "fab fa-github" class = "githubIcon" title = "GitHub")
+                div(class = "collapsibleContent")
+                    div(class = "information")
+                        p(class = "normalP")
+                            span(class = "when") Start Date: 
+                            span(class = "date") 09/2020
+                            span(class = "when") End Date: 
+                            span(class = "date") 01/2021
+                        p(class = "normalP")
+                            span(class = "languageType") Back-end:
+                            span(class = "language")  Regex, C++
+                        p(class = "description") Created a lexical analyzer, syntax parser, and run-time code interpreter to read in mini-language files and convert to mini-language intermediate code. 
+
+
+                    div(class = "detail")
+                        li Created a Lexical Analyzer to ﬁlter out improper variable declarations.
+                        li Used regex to ﬁlter out incorrect syntax from given mini-language ﬁle.
+                        li Used Bison to create a parser to check for grammatical errors within the mini-language 
+                            span ﬁle.
+                        li Used the syntactically correct grammar mini-language ﬁle and translated it into inter- 
+                            span mediate code, which was then given to mini-language compiler to produce its output.
+                        
+
+           
         
         script(src = "../homeJquery.js")
 
