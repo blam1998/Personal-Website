@@ -1,0 +1,80 @@
+.Project-Page{
+  max-height: fit-content;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 3rem 0rem 10rem 0rem;
+}
+
+
+.project-storage{
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  height: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.project-storage::-webkit-scrollbar {
+  display: none;
+}
+
+.project-item{
+  width: calc(calc(1300px/3) - 50px);
+  height: calc(calc(1300px/3) - 40px);
+  display: flex;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255,255,255,0.1);
+  border-radius: 6px;
+}
+
+.project-item:hover{
+  background: linear-gradient(0.25turn, rgba(255, 255, 255) 0%, rgb(173, 216, 230) 100%);
+}
+
+.completed{
+  background-color:lightblue;
+  color: black;
+}
+
+.inprogress{
+  color: white;
+}
+
+.project-name{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.project-legend{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.inprogress-circle{
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255,255,255,0.1);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem 1rem;
+}
+
+.completed-circle{
+  height: 25px;
+  width: 25px;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1rem 1rem;
+}

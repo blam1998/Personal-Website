@@ -1,0 +1,138 @@
+.ItemBox-List{
+    list-style-position: inside;
+    float:left;
+    height:auto;
+    white-space: normal;
+    word-wrap:break-word;
+    padding-top: 8px;
+    width: 100%;
+}
+
+
+
+.ItemBox-Project-Name{
+    color: white;
+    display: block;
+    font-weight: bold;
+    white-space: normal;
+    word-wrap:break-word;
+    padding-top: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.ItemBox-Project-Name .fa.fa-github{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.ItemBox-Languages{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+}
+
+.ItemBox-Languages-Elements{
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,1);
+    font-weight: bold;
+}
+
+.ItemBox-Date{
+    color: white;
+    display: block;
+    height:auto;
+    white-space: normal;
+    word-wrap:break-word;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.ItemBox-Summary{
+    color: white;
+    display: block;
+    height:auto;
+    white-space: normal;
+    word-wrap:break-word;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.ItemBox-ShortDescription{
+    color: white;
+    width: inherit;
+    display: block;
+}
+
+.ItemBox-Video-Title{
+    white-space: normal;
+    height: auto;
+    display: block;
+    word-wrap: break-word;
+    color: white;
+}
+
+.ItemBox-Youtube-Div{
+    position: relative;
+    padding-top: 5%;
+    display: block;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ItemBox-Outer-Frame{
+    height: fit-content;
+}
+
+.Readme-Div{
+    margin-top: 5%;
+    position: relative;
+    padding-top: 56.25%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.Readme-Iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ItemBox-Inner-Frame{
+    white-space: nowrap;
+    height: fit-content;
+}
+
+.ItemBox-Languages-Elements{
+    display: block;
+    border-radius: 10px;
+}
+
+.react-player > div{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+}
+
+.react-player > div > iframe{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

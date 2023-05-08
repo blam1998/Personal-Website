@@ -1,0 +1,83 @@
+.Homepage-Footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    min-height: 10vh;
+    z-index: 2;
+    height: fit-content;
+}
+
+.Footer-Column1, .Footer-Column2{
+    margin-top:3vh;
+    margin-bottom: 3vh;
+    width: 35vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-Column1{
+    margin-left: 15vw;
+}
+
+.Footer-Column1 h2, .Footer-Column2 h2{
+    margin: 0 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.Footer-Column2{
+    margin-right: 15vw;
+}
+
+.Footer-Column-Elements{
+    color: white;
+    font-size: 1em;
+}
+
+.Footer-Column-Elements .fa, .Footer-Column-Elements .fas{
+    margin-left: 0;
+    padding: 0 0 0 0 ;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 762px){
+    .Footer-Column-Elements{
+        width: 40vw;
+    }
+
+    .Footer-Column1 h2, .Footer-Column2 h2{
+        margin: 0 0;
+        color: white;
+    }
+
+    .Footer-Column-Elements .fa, .Footer-Column-Elements span{
+        margin-left: 0;
+        padding: 0 0 0 0 ;
+    }
+
+    .Footer-Column1{
+        margin-left: 10vw;
+    }
+
+    .Footer-Column2{
+        margin-right: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .Homepage-Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Footer-Column1, .Footer-Column2{
+        margin-left: 5vw;
+        width: 80vw;
+    }
+
+}

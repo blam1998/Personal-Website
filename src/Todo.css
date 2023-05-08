@@ -1,0 +1,198 @@
+/*
+button{
+    background-color: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(255, 219, 225);
+}
+*/
+
+#gSignOut{
+    display: none;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.profile{
+    position: relative;
+}
+
+#g-image-a{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#profile-collapsible{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding:1rem 1rem 2rem 1rem;
+    width: fit-content;
+    max-width: 20vw;
+}
+
+#profile-collapsible button{
+    border: none;
+    padding: 0.5rem 0;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
+
+#profile-collapsible button:hover{
+    background-color: rgb(255, 219, 225);
+}
+
+
+
+#task-add, #task-edit{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    display: none;
+}
+
+#name-flex{
+    display: "flex";
+    flex-direction: "row";
+}
+
+.task-add-inner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 1px solid black;
+    background-color: rgb(246,246,246);
+    border-radius: 10px;
+}
+
+.task-add-inner #title{
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.task-add-inner input, .task-add-inner textarea{
+    width: 90%;
+    line-height: 1.5rem;
+    margin: 0.5rem;
+}
+
+.task-add-inner button{
+    font-size: 1.5rem;
+    width: fit-content;
+    height: 2rem;
+    margin: 1rem 0;
+}
+
+#tasks-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.action-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+#g-image{
+    height: 48px;
+    width: 48px;
+    margin-bottom: 1rem;
+}
+
+#g-image-in{
+    height: 6vmin;
+    width: 6vmin;
+    margin: 1rem 1rem;
+    background-color: white;
+    z-index: 2;
+}
+
+#g-image, #g-image-in{
+    border: 0;
+    border-radius: 50%;
+    display: block;
+    margin: 0px;
+    position: relative;
+    z-index: 0;
+    overflow: clip;
+}
+
+#g-name{
+    background-color: white;
+    z-index: 2;
+    padding: 1rem 1rem;
+    word-wrap:break-word;
+}
+
+
+#add-task-button{
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#add-task-button:hover{
+    background-color: rgb(255, 219, 225);
+}
+
+#g-full-name{
+    margin-top: 1rem;
+    padding-top:1rem;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.operation-close{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    border-radius: 6px;
+    border:none;
+}
+
+.operation-close:hover{
+    background-color: rgb(255, 219, 225);
+}
+
+.task-add-inner button{
+    border-radius: 6px;
+    border: none;
+}
+
+.task-add-inner button:hover{
+    background-color: rgb(255, 219, 225);
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    #name-flex{
+        display: "flex";
+        flex-direction: "row";
+        align-items: "center";
+    }
+}
+

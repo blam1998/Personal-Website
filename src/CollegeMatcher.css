@@ -1,0 +1,84 @@
+.college-matching-field{
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+    padding: 1rem; 
+    padding-top: 20px; 
+    font-size: 1.5rem;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.college-matching-field div{
+    font-size: 1rem;
+}
+
+.college-select{
+    width: 500px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.college-button{
+    display: block;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.college-button:hover{
+    background-color: lightblue;
+}
+
+.college-match-result{
+    display: block;
+    width: 500px;
+    text-align: left;
+}
+
+.college-match-h2{
+    text-align: left;
+    padding: 0 0 0 0;
+    margin: 0 0;
+}
+
+
+/*=======================================500 Width======================================================*/
+
+@media screen and (max-width: 500px){
+    .college-match-result{
+        display: block;
+        width: 70vw;
+        text-align: left;
+    }
+
+    .college-select{
+        width: 70vw;
+        display: block;
+        font-size: 1rem;
+        padding: 10px;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .college-matching-field{
+        text-align: left;
+        background-color: white;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); 
+        padding-top: 20px;
+        font-size: 1.5rem;
+        width: 70vw;
+    }
+
+    .college-match-h2{
+        width: 70vw;
+    }
+}

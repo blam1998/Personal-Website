@@ -1,0 +1,60 @@
+
+.crafting-main{
+    display: flex;
+    flex-direction: row;
+}
+.crafting-item-name{
+    height: 50vh;
+    width: 20vw;
+    overflow-y: auto;
+    border: 1px solid black;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.crafting-item-name button{
+    margin-top: 2px;
+    width: 100%;
+    display: block;
+}
+
+.crafting-requirement-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.crafting-requirement{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 20vw;
+    height: 38vh;
+    border: 1px solid black;
+    overflow-y: auto;
+    white-space: pre-line;
+}
+
+.crafting-requirement div{
+    margin-left: 10px;
+}
+
+.crafting-confirm{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 20vw;
+    height: 10vh;
+    overflow-y: auto;
+}
+
+#amount{
+    display: block;
+    height: 3.5vh;
+    width: 10vw;
+    margin: 0 auto;
+}
+
+#craft-button{
+    display: block;
+    height: 4vh;
+    margin: 0 auto;
+    margin-top: 1vh;
+}

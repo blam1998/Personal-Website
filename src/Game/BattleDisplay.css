@@ -1,0 +1,48 @@
+.battle-hp-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.battle-hp-stats-obj{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.battle-hp-stats-obj div{
+    border: 2px black solid;
+    width: 10vw;
+}
+
+.user-interface{
+    background-color: black;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.turn-display{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.user-interface button{
+    width: 100%;
+    display: block;
+}
+
+#player-stats-div{
+    margin-left: 2vw;
+}
+
+#enemy-stats-div{
+    margin-right: 2vw;
+}
+
+#dmg-history-div{
+    width: 40vw;
+    height: 20vh;
+    margin: 0 auto;
+    overflow-y: auto;
+}

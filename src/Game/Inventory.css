@@ -1,0 +1,57 @@
+.inventory-column{
+    border: 1px black solid;
+    display: block;
+}
+
+.inventory-row{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+
+.inventory-column.name{
+    width: 15vw;
+    text-align: center;
+}
+
+.inventory-column.type{
+    width: 5vw;
+    text-align: center;
+}
+
+.inventory-column.equipment{
+    width: 8vw;
+    text-align: center;
+}
+
+.inventory-column.hp{
+    width: 4vw;
+    text-align: center;
+}
+
+.inventory-column.atk{
+    width: 4vw;
+    text-align: center;
+}
+
+.inventory-column.def{
+    width: 4vw;
+    text-align: center;
+}
+
+.inventory-column.heal{
+    width: 4vw;
+    text-align: center;
+}
+
+.inventory-column.quantity{
+    width: 4vw;
+    text-align: center;
+}
+
+.use-button{
+    display: block;
+    width: 4vw;
+}

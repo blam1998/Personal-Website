@@ -1,0 +1,41 @@
+
+
+.ItemBoxFrame{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+    
+.ItemBox-Open-Frame{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ItemBox-Open-Frame:hover{
+    cursor: pointer;
+}
+
+.ItemBoxFrame-Image{
+    height: 90%;
+    width: 90%;
+}
+
+.ItemBoxFrame-Title{
+    margin-top: 10px;
+    color: inherit;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-demo{
+    position: absolute;
+    top: 0px;
+    right: 0.25rem;
+    color: black;;
+    font-weight: bold;
+}

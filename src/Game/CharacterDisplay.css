@@ -1,0 +1,14 @@
+.character-class{
+    display: block;
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.character-display-header{
+    text-align: center;
+}
+
+.character-display-header div{
+    text-align: left;
+}

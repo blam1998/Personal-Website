@@ -1,0 +1,29 @@
+.PriceCalculator input{
+    color: black;
+    width: 2.5rem;
+    max-width: 10rem;
+}
+
+
+.Checklist{
+    display: flex;
+    flex-direction: row;
+}
+
+.PriceCalculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.PriceCalculator legend{
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px black solid;
+    padding: 10px 10px;
+    box-shadow: 3px 3px;
+}

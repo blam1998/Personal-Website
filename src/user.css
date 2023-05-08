@@ -1,0 +1,121 @@
+
+
+
+.Intro {
+    z-index: 1;
+    background-color:rgba(24, 23, 23);
+    width: 100%;
+    min-height: 10vh;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+
+
+.User-Intro-Frame{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    padding-left: 1vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.UserName{
+    color: white;
+    font-weight:bold;
+    font-size:2em;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px){
+    .UserName{
+        font-size: 1.5em;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.User-Nav-Div-Flex{
+    display: flex;
+}
+
+.User-Nav-Div{
+    color: black;
+    font-weight: bold;
+    height: fit-content;
+    margin-right: 2vw;
+}
+
+
+.User-Nav-Icons{
+    padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0px solid white;
+    border: none;
+    font-size: 1em;
+}
+
+.User-Nav-Icons.active{
+    background-color:rgb(182, 226, 255);
+    border-radius: 2vmin 2vmin 2vmin 2vmin;
+}
+
+
+
+
+
+/*========================================================*/
+.dropDownMenuButton{
+    margin-right: 2vw;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.dropDownMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    max-width: 30vw;
+    min-width: 10vw;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.dropDownMenu li{
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+@media screen and (max-width: 600px){
+    .navBarDropDown{
+        display: block;
+    }
+
+    .User-Nav-Div-Flex{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px){
+    .navBarDropDown{
+        display: none;
+    }
+
+    .User-Nav-Div-Flex{
+        display: flex;
+    }
+}
