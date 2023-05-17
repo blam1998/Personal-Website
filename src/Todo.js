@@ -5,11 +5,7 @@ import jwt_decode from 'jwt-decode';
 import Task from './Task';
 import { createRoot } from 'react-dom/client';
 import validator from 'validator';
-import AWS from 'aws-sdk';
 
-const postApi = process.env.REACT_APP_TODO_POST;
-const putApi = process.env.REACT_APP_TODO_PUT;
-const getApi = process.env.REACT_APP_TODO_GET;
 
 
 class Todo extends Component{
@@ -58,13 +54,13 @@ class Todo extends Component{
 
         switch(method){
             case "POST":
-                endPoint = postApi;
+                endPoint = process.env.REACT_APP_TODO_POST;
                 break;
             case "PUT":
-                endPoint = putApi;
+                endPoint = process.env.REACT_APP_TODO_PUT;
                 break;
             case "GET":
-                endPoint = getApi + '?id=' + validator.escape(data.id);
+                endPoint = process.env.REACT_APP_TODO_GET + '?id=' + validator.escape(data.id);
                 break;
             default:
                 break;

@@ -53,6 +53,7 @@ class Demo extends Component{
                             <option value = "test">Test Score Converters</option>
                             <option value = "college-matcher">College Matcher</option>
                             <option value = "price-calculator">Website Price Calculator</option>
+                            <option value = "todo">Personal Todo List</option>
                         </select>
                         <div id = "calculator-demo" className = "demo-list">
                             <Calculator/>
@@ -64,6 +65,7 @@ class Demo extends Component{
                             <PriceCalculator/>
                         </div>
                         <div className = "demo-list">
+                            <Todo/>
                         </div>
                     </div>
                 </div>
