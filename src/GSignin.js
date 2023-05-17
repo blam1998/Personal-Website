@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import jwt_decode from "jwt-decode";
 
 
-const gApi = process.env.REACT_APP_GOOGLE_SIGN_IN_API;
 
 class GSignin extends Component{
 
@@ -20,7 +19,7 @@ class GSignin extends Component{
         /* eslint-disable */
 
         google.accounts.id.initialize({
-            client_id: gApi,
+            client_id: process.env.REACT_APP_GOOGLE_SIGN_IN_API,
             callback: this.props.onSuccess
         });
 

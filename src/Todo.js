@@ -49,7 +49,6 @@ class Todo extends Component{
         //Method --> POST,PUT,GET,...
         //data --> Json object
         const httpReq = new XMLHttpRequest();
-        const csrfToken = document.cookie.match(/csrftoken=([\w-]+)/)[1];
         var endPoint = "";
 
         switch(method){
