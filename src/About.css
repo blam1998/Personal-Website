@@ -131,6 +131,9 @@
     background-repeat: no-repeat;
 }
 
+.skill-cards:hover{
+    overflow-y: visible;
+}
 
 .Projects{
     width: 100%;
@@ -147,8 +150,8 @@
 .skill-cards{
     display: flex;
     flex-direction: row;
-    height: fit-content;
-    max-height: 100%;
+    overflow-y: hidden;
+    max-height: 60vh;
     max-width: 80%;
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -157,10 +160,6 @@
     justify-content: center;
 }
 
-
-.skill-cards::-webkit-scrollbar {
-    display: none;
-}
 
 
 .cards{
@@ -221,19 +220,45 @@
 }
 
 @media screen and (max-width: 650px){
+    .About-Me-Socials .Picture-Container{
+        height: 10rem;
+        width: 10rem;
+        border: 2px solid rgb(58, 183, 255);
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .Name {
+        margin-top: 1.5rem;
+    }
     .Homepage-Body{
         display: flex;
         height: fit-content;
         min-height: 80vh;
         justify-content: space-between;
+        margin-top: 10rem;
     }
 
     .about-me-title{
+        margin-top: 2.5rem;
         margin-left: 0rem;
     }
 
     .cards{
-        width: 60%;
+        min-width: 30%;
+        height: 10vh;
+    }
+    
+    .skill-cards{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        width: 80vw;
+        justify-content: start;
+    }
+
+    .Skills{
+        min-height: 50vh;
     }
 }
 

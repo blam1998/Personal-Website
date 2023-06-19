@@ -17,14 +17,15 @@
     flex-direction: column;
 }
 
-.Footer-Column1{
-    margin-left: 15vw;
-}
 
 .Footer-Column1 h2, .Footer-Column2 h2{
     margin: 0 0;
     font-size: 2rem;
     color: white;
+}
+
+.Footer-Column1{
+    margin-left: 15vw;
 }
 
 .Footer-Column2{
@@ -69,7 +70,7 @@
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 650px){
     .Homepage-Footer{
         display: flex;
         flex-direction: column;
@@ -78,6 +79,10 @@
 
     .Footer-Column1, .Footer-Column2{
         margin-left: 5vw;
+        width: 90vw;
+    }
+
+    .Footer-Column-Elements{
         width: 80vw;
     }
 

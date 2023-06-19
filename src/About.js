@@ -38,6 +38,8 @@ function searchCard(content){
     }
 
     const target = document.getElementsByClassName("skill-cards")[0];
+    target.scrollTop = 0;
+    target.scrollLeft = 0;
 
     highLight.map((x,i) => {
         document.getElementById(x).classList.add('card-highlight');
@@ -77,9 +79,6 @@ function About(){
                         <div style={{paddingLeft: "2rem"}}>Aspiring to become <span style = {{color: "orange"}}>Full Stack Software Developer</span></div>
                     </div>
                 </div>
-                <div style = {{height: "200px", width: "100%"}}>
-                </div>
-
                 <div className = "Skills">
                     <div className = "skills-background"></div>
                     <h1 className = "Title" style = {{color: "White", fontWeight: "Bold", fontSize: "3rem"}}>What I Know</h1>

@@ -63,7 +63,7 @@ class ItemBoxFrame extends Component{
                     <div id = {"ItemBox+"+this.props.Id} className = "ItemBoxFrame-Title">
                         {this.props.Title}
                     </div>
-                    <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+                    <div className = "ItemBox-Div">
                         {this.props.Languages.map(((element,index) => {
                         return(
                             <div key = {index} className = "ItemBox-Languages-Elements">{element}</div>
