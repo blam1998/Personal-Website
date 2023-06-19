@@ -20,7 +20,7 @@
     padding:3% 3% 3% 3%;
     width:80%;
     min-height:30vh;
-    max-height:60%;
+    height:60%;
     overflow: auto;
     background-color: inherit;
     background-color: rgba(24, 23, 23);
@@ -56,13 +56,4 @@
     0% {margin-top: 2000px;}
     100% {margin-top:0px;}
   }
-  
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100%{opacity:1}
-  }
 
-  .my-animation {
-    z-index: 1;
-    animation: fadeIn 0.8s ease-in-out;
-  }

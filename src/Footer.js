@@ -21,7 +21,7 @@ class Footer extends Component{
                     <h2> Miscellaneous</h2>
                     <div className = "Footer-Column-Elements">
                         <i className = "fa fa-map-marker"></i>
-                        <span> California</span>
+                        <span> Los Angeles, California</span>
                     </div>
                     <div className = "Footer-Column-Elements">
                         <a  href = "https://github.com/blam1998" className = "fa fa-github" title = "Github" target = "_blank"> Github</a>

@@ -63,6 +63,13 @@ class ItemBoxFrame extends Component{
                     <div id = {"ItemBox+"+this.props.Id} className = "ItemBoxFrame-Title">
                         {this.props.Title}
                     </div>
+                    <div style = {{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+                        {this.props.Languages.map(((element,index) => {
+                        return(
+                            <div key = {index} className = "ItemBox-Languages-Elements">{element}</div>
+                        )}
+                        ))}
+                    </div>
                 </div>
                 <PopupModal Data ={this.props.ItemBox} Id = {this.props.Id}/>
                 

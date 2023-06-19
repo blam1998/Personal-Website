@@ -20,7 +20,7 @@ const Inprogress = [
          "Currently adding more features and refining the layout of the website."
         ],
         "Github": "https://github.com/blam1998/Personal-Website",
-        "Languages": ["React", "Javascript", "CSS", "Framer Motion", "React-Router-Dom"],
+        "Languages": ["React", "Javascript", "CSS", "React-Router-Dom"],
         "VideoSrc": "#",
         "Demo": "",
     },

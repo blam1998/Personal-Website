@@ -10,15 +10,10 @@
 }
 
 
-.game-div-full{
-    text-align: center;
-    align-items: center;
-    margin:0 auto;
-}
-
 .game-full-div{
     min-height: 80vh;
     position: relative;
+    width: 100%;
 }
 
 .character-div{
@@ -55,6 +50,7 @@
 }
 
 .game-background{
-    background: var(--background-gradient);
+    background: rgba(255,255,255);
     height: 100%;
+    width: 80%;
 }

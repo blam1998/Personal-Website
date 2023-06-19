@@ -15,7 +15,6 @@ root.render(
         <Routes>
           <Route exact path = '/' element = {<About/>} />
           <Route exact path = '/Demo' element = {<Demo/>} />
-          <Route exact path = '/Game' element = {<Game/>} />
         </Routes>
       </Router>
     </div>

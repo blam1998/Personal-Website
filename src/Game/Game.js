@@ -276,11 +276,7 @@ class Game extends Component{
 
     render(){
         return(
-            <div>
                 <div className = "game-background">
-                    <div className = "Navigation-Bar">
-                        <User/>
-                    </div>
                     <div className = "game-full-div" id = "game-full-div-id">
                         <div className = "game-gui">
                             <button className = "game-gui-button" onClick = {() => this.Battle()}>Battle</button>
@@ -292,10 +288,6 @@ class Game extends Component{
                         <div id = "game-history"></div>
                     </div>
                 </div>
-                <div>
-                    <Footer/>
-                </div>
-            </div>
         )
     }
 }

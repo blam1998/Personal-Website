@@ -7,30 +7,39 @@ import { Inprogress } from "./Inprogress";
 
 const projectStorage = [];
 
+function buttonClick(event){
+    const target = document.getElementById("inprogress-projects");
+    const target2 = document.getElementById("complete-projects");
+
+    if (event.target.innerHTML === "Completed" && target2.style.display === "flex"){return;}
+    else if (event.target.innerHTML === "Inprogress" && target.style.display === "flex"){return;}
+
+    target.style.display = target.style.display == "flex"? "none" : "flex";
+    target2.style.display = target2.style.display == "flex"? "none" : "flex";
+
+    if (event.target.innerHTML === "Inprogress"){
+        event.target.classList.add("project-active");
+        event.target.nextSibling.classList.remove("project-active");
+    }
+    else{
+        event.target.previousSibling.classList.remove("project-active");
+        event.target.classList.add("project-active");
+    }
+
+}
+
 function Project(){
     return(
-        <div>
+        <div style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             <div className = "project-name">
-                Projects
+                What I Worked On
             </div>
-            <div className = "project-legend">
-                <div>
-                    <span className = "inprogress-circle">
-                    </span>
-                </div>
-                <span>
-                    Inprogress
-                </span>
-                <div>
-                    <span className = "completed-circle">
-                    </span>
-                </div>
-                <span>
-                    Completed
-                </span>
+            <div className = "button-div">
+                <button onClick = {(e) => buttonClick(e)} className = "project-button">Inprogress</button>
+                <button onClick = {(e) => buttonClick(e)} className = "project-button project-active">Completed</button>
             </div>
             <div className = "Project-Page">
-                <div className = "project-storage">
+                <div className = "project-storage inprogress" id = "inprogress-projects">
                     {
                         InprogressStorage.map((x,i) => {
                             return(
@@ -40,11 +49,13 @@ function Project(){
                                 )
                         })
                     }
+                </div>
 
+                <div className = "project-storage complete" id = "complete-projects" style = {{display: "flex"}}>
                     {
                         CompletedStorage.map((x,i) => {
                             return(
-                                <div className = "project-item completed">
+                                <div className = "project-item completed" style = {{animationDuration: ((i + 1) * 0.125).toString() + 's'}}>
                                     {x}
                                 </div>
                             )

@@ -63,23 +63,26 @@ function About(){
             </div>
             <div className = "Homepage-Body" id = "homepage-body-color2">
                 <div className = "About-Me">
+                    <div className = "About-me-bg"></div>
                     <div className = "About-Me-Socials">
                         <div className = "Picture-Container">
                             <img className = "Picture" src = "./favicon.ico"></img>
                         </div>
-                        <div className = "Name">Bao Lam</div>
-                        <div className = "Socials">
-                            <a  href = "https://github.com/blam1998" className = "fa fa-github" title = "Github" target = "_blank"></a>
-                            <a  href = "https://www.linkedin.com/in/bao-lam-le-431175225/details/projects/" className = "fa fa-linkedin-square" title = "Linkedin" target = "_blank"></a>
-                        </div>
+                        <div className = "Name">Bao Lam Le</div>
+                        <div style = {{fontSize: "1.25rem"}}>Bachelor of Science, Computer Science</div>
+                        <div style = {{fontSize: "1.25rem"}}>University of California, <span style = {{color: "blue"}}>Riverside</span></div>
                     </div>
-                    <div className = "About-Me-Text">
-                        {AboutText}
+                    <div className = "about-me-title">
+                        <div><span style = {{color: "lightblue"}}>Front-end</span> Software Developer</div>
+                        <div style={{paddingLeft: "2rem"}}>Aspiring to become <span style = {{color: "orange"}}>Full Stack Software Developer</span></div>
                     </div>
+                </div>
+                <div style = {{height: "200px", width: "100%"}}>
                 </div>
 
                 <div className = "Skills">
-                    <h1 className = "Title"><span className = "first-letter">S</span>killsets</h1>
+                    <div className = "skills-background"></div>
+                    <h1 className = "Title" style = {{color: "White", fontWeight: "Bold", fontSize: "3rem"}}>What I Know</h1>
                     <input placeholder = "Search" className = "skill-search" onChange = {(event) => {searchCard(event.target.value)}}></input>
                     <div className = "skill-cards">
                         {
@@ -95,7 +98,9 @@ function About(){
 
                 <div className = "Projects">
                     <Project/>
+                    <div className = "pre-footer" style = {{height: "100%", width: "100%"}}></div>
                 </div>
+
                 
             </div>
             <Footer/>

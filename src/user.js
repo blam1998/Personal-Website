@@ -80,9 +80,6 @@ class user extends Component{
                         <div id = "demo" className = "User-Nav-Div">
                             <NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true" >Demo</NavLink>
                         </div>
-                        <div id = "game" className = "User-Nav-Div">
-                            <NavLink className = "User-Nav-Icons" to = "/Game" activestyle = "true">Game</NavLink>
-                        </div>
                     </div>
 
                     <div className = "navBarDropDown">
@@ -90,8 +87,7 @@ class user extends Component{
                             <a href = "#" className = "dropDownMenuButton" onClick = {this.handleDropDown}>Menu</a>
                             <div className = "dropDownMenu">
                                 <li onClick = {this.handleCloseDropDown}><NavLink  className = "User-Nav-Icons" to = "/" activestyle = "true">About</NavLink></li>
-                                <li onClick = {this.handleCloseDropDown}><NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true" >Demo</NavLink></li>
-                                <li onClick = {this.handleCloseDropDown}><NavLink className = "User-Nav-Icons" to = "/Game" activestyle = "true">Game</NavLink></li>
+                                <li onClick = {this.handleCloseDropDown}><NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true">Demo</NavLink></li>
                             </div>
                         </nav>
                     </div>

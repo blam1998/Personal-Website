@@ -9,8 +9,8 @@
 }
 
 .Footer-Column1, .Footer-Column2{
-    margin-top:3vh;
-    margin-bottom: 3vh;
+    margin-top:6vh;
+    margin-bottom: 6vh;
     width: 35vw;
     height: fit-content;
     display: flex;
@@ -23,7 +23,7 @@
 
 .Footer-Column1 h2, .Footer-Column2 h2{
     margin: 0 0;
-    font-size: 1.5em;
+    font-size: 2rem;
     color: white;
 }
 
@@ -33,12 +33,13 @@
 
 .Footer-Column-Elements{
     color: white;
-    font-size: 1em;
+    font-size: 1.25rem;
 }
 
 .Footer-Column-Elements .fa, .Footer-Column-Elements .fas{
     margin-left: 0;
     padding: 0 0 0 0 ;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
 }

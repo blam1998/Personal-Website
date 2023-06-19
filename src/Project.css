@@ -1,10 +1,10 @@
 .Project-Page{
   max-height: fit-content;
-  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   border-radius: 10px;
+  width: 100%;
   margin: 3rem 0rem 10rem 0rem;
 }
 
@@ -12,11 +12,20 @@
 .project-storage{
   display: flex;
   flex-direction: row;
-  width: 1300px;
+  width: 100%;
   height: fit-content;
   flex-wrap: wrap;
   align-items: center;
   overflow-y: auto;
+  justify-content: center;
+}
+
+#inprogress-projects{
+  display: none;
+}
+
+#complete-projects{
+  display: flex;
 }
 
 .project-storage::-webkit-scrollbar {
@@ -24,57 +33,86 @@
 }
 
 .project-item{
-  width: calc(calc(1300px/3) - 50px);
-  height: calc(calc(1300px/3) - 40px);
+  width: 30vw;
+  min-width: fit-content;
+  height: auto;
   display: flex;
   padding: 10px 10px;
   margin: 10px 10px 10px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255,255,255,0.1);
+  background-color: rgb(255,255,255);
   border-radius: 6px;
+  animation: Fadein 0.5s linear;
 }
 
 .project-item:hover{
-  background: linear-gradient(0.25turn, rgba(255, 255, 255) 0%, rgb(173, 216, 230) 100%);
-}
-
-.completed{
-  background-color:lightblue;
-  color: black;
-}
-
-.inprogress{
-  color: white;
+  background-image: url('/public/Skill-card.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .project-name{
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
 }
 
-.project-legend{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+
+.project-button{
+  border: none;
+  padding: 10px 10px;
+  background-color: transparent;
+  margin: 0rem 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgba(255,255,255);
+  border-radius: 10px;
 }
 
-.inprogress-circle{
-  height: 25px;
-  width: 25px;
-  background-color: rgb(255,255,255,0.1);
-  border-radius: 50%;
-  display: inline-block;
-  margin: 1rem 1rem;
-}
-
-.completed-circle{
-  height: 25px;
-  width: 25px;
+.project-button:hover{
   background-color: lightblue;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 1rem 1rem;
+}
+
+.project-active{
+  border-bottom: 3px white outset;
+}
+
+
+@media screen and (max-width: 500px){
+  .project-item{
+    width: 80%;
+    height: fit-content;
+  }
+
+  .button-div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-button{
+    margin-bottom: 2rem;
+  }
+
+  .project-item{
+    min-width: 50vw;
+  }
+
+}
+
+@keyframes Fadein{
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1%{
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
