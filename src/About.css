@@ -239,6 +239,10 @@
         justify-content: space-between;
     }
 
+    .About-Me-Socials{
+        margin-top: 10rem;
+    }
+
     .about-me-title{
         margin-top: 2.5rem;
         margin-left: 0rem;
