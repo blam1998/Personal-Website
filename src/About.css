@@ -237,7 +237,7 @@
         height: fit-content;
         min-height: 80vh;
         justify-content: space-between;
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
 
     .about-me-title{
