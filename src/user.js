@@ -72,16 +72,15 @@ class user extends Component{
                             })}
                         </motion.div>
                     </div>
-                    
+                        
                     <div className = "User-Nav-Div-Flex">
                         <div id = "about" className = "User-Nav-Div">
-                            <NavLink  className = "User-Nav-Icons" to = "/" activestyle = "true" >About</NavLink>
+                            <NavLink  className = "User-Nav-Icons" to = "/" activestyle = "true" style = {{color: "white"}}>About</NavLink>
                         </div>
                         <div id = "demo" className = "User-Nav-Div">
-                            <NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true" >Demo</NavLink>
+                            <NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true" style = {{color: "white"}} >Demo</NavLink>
                         </div>
                     </div>
-
                     <div className = "navBarDropDown">
                         <nav>
                             <a href = "#" className = "dropDownMenuButton" onClick = {this.handleDropDown}>Menu</a>
@@ -92,7 +91,6 @@ class user extends Component{
                         </nav>
                     </div>
                 </div>
-                
             </div>
             )
     }
