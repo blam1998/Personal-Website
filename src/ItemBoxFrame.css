@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 660px){
     .ItemBox-Div{
         display: none;
     }

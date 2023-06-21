@@ -4,7 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import About from './About';
 import Demo from './Demo';
-import Game from './Game/Game';
+import Quicksort from './Quicksort';
+
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
         <Routes>
           <Route exact path = '/' element = {<About/>} />
           <Route exact path = '/Demo' element = {<Demo/>} />
+          <Route exact path = '/QS' element = {<Quicksort/>} />
         </Routes>
       </Router>
     </div>
