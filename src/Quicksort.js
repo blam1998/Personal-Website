@@ -5,6 +5,7 @@ import {Component} from 'react';
 class Quicksort extends Component{
     constructor(props){
         super(props);
+        this.val = 0;
         this.input = [];
         this.generateArray = this.generateArray.bind(this);
         this.solve = this.solve.bind(this);
@@ -80,20 +81,22 @@ class Quicksort extends Component{
 
         const result = document.createElement('div');
         result.setAttribute('class', 'Quicksort-Element-Container');
-
+        result.setAttribute('style', 'animation-duration: ' + (this.val * 0.125).toString() + 's');
+        this.val = this.val + 1;
         array.map((x,i) => {
             var temp1 = document.createElement('span');
             temp1.setAttribute('class', 'Quicksort-Element');
-            if (curr >= 0 && swap >= 0){
+            if (i === array.length - 1){
+                temp1.classList.add('Pivot');
+            }
+
+            if (curr >= 0 || swap >= 0){
                 if (i === curr){
                     temp1.classList.add("Curr");
                 }
                 if (i === swap){
                     temp1.classList.add("Swap");
                 }
-            }
-            if (i === array.length - 1){
-                temp1.classList.add('Pivot');
             }
             temp1.innerHTML = x.toString();
             result.appendChild(temp1);
@@ -120,7 +123,7 @@ class Quicksort extends Component{
                         <div>Pivot</div>
                     </div>
                 </div>
-                <button className = "Quicksort-Button" onClick = {() => {this.generateRandomArray(); this.clean(); this.solve();}}>Visualize and Solve Random Array</button>
+                <button className = "Quicksort-Button" onClick = {() => {this.generateRandomArray(); this.clean(); this.solve(); this.val = 0;}}>Visualize and Solve Random Array</button>
             </div>
         )
     }

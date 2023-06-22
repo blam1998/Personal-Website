@@ -4,7 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import About from './About';
 import Demo from './Demo';
-import Quicksort from './Quicksort';
 
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -16,7 +15,6 @@ root.render(
         <Routes>
           <Route exact path = '/' element = {<About/>} />
           <Route exact path = '/Demo' element = {<Demo/>} />
-          <Route exact path = '/QS' element = {<Quicksort/>} />
         </Routes>
       </Router>
     </div>
