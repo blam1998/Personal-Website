@@ -7,6 +7,7 @@ import CollegeMatcher from './CollegeMatcher';
 import Game from './Game/Game';
 import PriceCalculator from './PriceCalculator';
 import Todo from './Todo';
+import Quicksort from './Quicksort';
 
 
 class Demo extends Component{
@@ -14,7 +15,7 @@ class Demo extends Component{
         super(props);
 
         this.demoNameMap = new Map([
-            ["", -1] ,["test", 0], ["college-matcher",1], ["price-calculator",2], ["todo", 3], ["game",4]
+            ["", -1] ,["test", 0], ["college-matcher",1], ["price-calculator",2], ["todo", 3], ["game", 4], ["QS", 5],
         ]);
 
         this.state = {
@@ -55,6 +56,7 @@ class Demo extends Component{
                             <option value = "price-calculator">Website Price Calculator</option>
                             <option value = "todo">Personal Todo List</option>
                             <option value = "game">Text Based Game</option>
+                            <option value = "QS">Quicksort Visualizer</option>
                         </select>
                         <div id = "calculator-demo" className = "demo-list">
                             <Calculator/>
@@ -70,6 +72,9 @@ class Demo extends Component{
                         </div>
                         <div className = "demo-list">
                             <Game/>
+                        </div>
+                        <div className = "demo-list">
+                            <Quicksort/>
                         </div>
                     </div>
                 </div>
