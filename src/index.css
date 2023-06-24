@@ -21,3 +21,14 @@ button:hover{
   cursor: pointer;
 }
 
+.one-word-title{
+  text-transform: none;
+  -webkit-text-stroke: 0.041875em rgb(255, 255, 255);
+  color: #000000;
+  letter-spacing: 0.01em;
+  font-family: YAEkSzqSKbA-0;
+  line-height: 1.18751732em;
+  -webkit-text-fill-color: transparent;
+  text-align: justify;
+  font-size: 3rem;
+}

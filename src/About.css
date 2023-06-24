@@ -119,6 +119,7 @@
     min-height: 100vh;
     width: 100%;
     padding-bottom: 200px;
+    background-color: rgba(55, 0, 255, 0.05);
 }
 
 .skills-background{
@@ -136,6 +137,7 @@
 }
 
 .Projects{
+    padding: 200px 0px;
     width: 100%;
     display: flex;
     position: relative;

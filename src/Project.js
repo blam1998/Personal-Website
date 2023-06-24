@@ -31,9 +31,9 @@ function buttonClick(event){
 function Project(){
     return(
         <div style = {{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-            <div className = "project-name">
-                What I Worked On
-            </div>
+            <h1 className = "one-word-title">
+                P R O J E C T S
+            </h1>
             <div className = "button-div">
                 <button onClick = {(e) => buttonClick(e)} className = "project-button">Inprogress</button>
                 <button onClick = {(e) => buttonClick(e)} className = "project-button project-active">Completed</button>

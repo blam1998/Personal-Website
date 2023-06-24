@@ -81,7 +81,7 @@ function About(){
                 </div>
                 <div className = "Skills">
                     <div className = "skills-background"></div>
-                    <h1 className = "Title" style = {{color: "White", fontWeight: "Bold", fontSize: "3rem"}}>What I Know</h1>
+                    <h1 className = "one-word-title" style = {{color: "White", fontWeight: "Bold", fontSize: "3rem"}}>L A N G U A G E / F R A M E W O R K S</h1>
                     <input placeholder = "Search" className = "skill-search" onChange = {(event) => {searchCard(event.target.value)}}></input>
                     <div className = "skill-cards">
                         {

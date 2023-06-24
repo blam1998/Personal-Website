@@ -62,7 +62,7 @@ class user extends Component{
         return(
             <div className = "Intro">
                 <div className = "User-Intro-Frame">
-                    <div className = "UserName">
+                    <div className = "UserName one-word-title">
                         <motion.div
                         variants = {this.container}
                         initial = "hidden"
