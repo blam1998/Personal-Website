@@ -63,7 +63,7 @@
     font-weight: bold;
     border: 0px solid rgb(0, 0, 0);
     border: none;
-    font-size: 1em;
+    font-size: 1rem;
     z-index: 3;
 }
 .User-Nav-Icons:hover{

@@ -256,10 +256,13 @@
     }
     
     .skill-cards{
-        overflow-x: scroll;
-        flex-wrap: nowrap;
+        overflow-y: scroll;
+        overflow-x: none;
+        flex-wrap: wrap;
         width: 80vw;
-        justify-content: start;
+        text-align: center;
+        justify-content: center;
+        text-overflow: ellipsis;
     }
 
     .Skills{
