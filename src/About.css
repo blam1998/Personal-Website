@@ -2,8 +2,16 @@
 :root{
     --bg-color: rgb(20,20,20);
     --card-color: rgb(23,23,23);
-    --background-gradient: linear-gradient(0deg, rgba(86, 139, 255, 0.65) 0%,  rgba(86, 139, 255, 0.15) 100%);
+    --background-gradient: linear-gradient(0deg, rgba(98, 121, 172, 0.65) 0%,  rgba(98, 121, 172, 0.15) 100%);
 }
+
+.one-word-title{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
 
 .Homepage{
     height: fit-content;
@@ -21,7 +29,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    background: var(--background-gradient);
+    background: linear-gradient(0deg, rgba(193, 212, 255, 0.65) 0%,  rgba(193, 212, 255, 0.15) 100%);
 }
 
 .About-Me{
@@ -31,6 +39,7 @@
     height: 90vh;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 .About-me-bg{
@@ -48,6 +57,16 @@
     flex-direction: column;
     font-size: 2.5rem;
     margin-left: 5rem;
+    width: 60%;
+}
+
+.About-Me-Detail{
+    padding: 200px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .About-Me-Socials{
@@ -79,6 +98,11 @@
     object-fit: cover;
 }
 
+.Work-Experience{
+    background-color: #f6f1f1;
+    width: 100%;
+    padding: 200px 0px;
+}
 
 @media screen and (max-width: 1000px){
     .About-Me{
@@ -91,6 +115,7 @@
     }
 
     .about-me-title{
+        display: none;
         text-align: center;
     }
 
@@ -222,6 +247,10 @@
 }
 
 @media screen and (max-width: 650px){
+    .one-word-title{
+        font-size: 2.25rem;
+    }
+
     .About-Me-Socials .Picture-Container{
         height: 10rem;
         width: 10rem;

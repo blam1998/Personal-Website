@@ -10,4 +10,15 @@ var CoursesText = ["Artificial Intelligence", "Dynamic Programming", "Software D
 
 var OtherSkillsText = ["Amazon S3", "Amazon Athena", "Pug", "HTML", "CSS", "Jquery", "Ajax", "Node.js", "Socket.io", "Django", "React", "Jira", "Github", "Wordpress", "Linux"];
 
-export {AboutText as AboutText, JobText as JobText, LanguagesText as LanguagesText, CoursesText as CoursesText, OtherSkillsText as OtherSkillsText};
+var AboutMe = {
+    "Name": "Bao Lam Le",
+    "Location": "Los Angeles, CA",
+    "College": "University of California, Riverside",
+    "Degree": "Bachelor of Science",
+    "Major": "Computer Science",
+    "Duration": "09/2017 - 12/2021",
+    "Gender": "Male",
+    "Hobby": ["Reading", "Drawing", "Competitive Online Games"]
+}
+
+export {AboutText as AboutText, JobText as JobText, LanguagesText as LanguagesText, CoursesText as CoursesText, OtherSkillsText as OtherSkillsText, AboutMe as AboutMeText};

@@ -23,7 +23,7 @@ button:hover{
 
 .one-word-title{
   text-transform: none;
-  -webkit-text-stroke: 0.041875em rgb(255, 255, 255);
+  -webkit-text-stroke: 0.041875em rgb(0, 0, 0);
   color: #000000;
   letter-spacing: 0.01em;
   font-family: YAEkSzqSKbA-0;
@@ -31,4 +31,16 @@ button:hover{
   -webkit-text-fill-color: transparent;
   text-align: justify;
   font-size: 3rem;
+}
+
+.Flex-Title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Flex-Title > h1{
+  margin-top: 0;
 }

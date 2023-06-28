@@ -1,0 +1,63 @@
+.Experience-Card-Grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 90vw;
+    height: fit-content;
+    margin: 5rem 0;
+}
+
+.Experience-Card-Flex{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 1rem;
+    flex-wrap:wrap;
+    width: 50vw;
+    max-width: 80vw;
+}
+
+.Experience-Card-Picture{
+    background-image: url('/public/SEOD.png');
+    transform: scale(1,1);
+    background-size: contain;
+    background-position: center;
+    max-width: 20vw;
+    margin: 0 1rem;
+}
+
+
+.Job-Title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+
+}
+
+.Job-Company, .Job-Duration{
+    color: lightblue;
+    font-size: 1.5rem;
+}
+
+.Description-Child{
+    word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 1.25rem;
+}
+
+
+@media screen and (max-width: 1000px){
+    .Experience-Card-Picture{
+        display: none;
+    }
+
+    .Experience-Card-Flex{
+        width: 80vw;
+    }
+}

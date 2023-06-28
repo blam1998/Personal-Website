@@ -34,6 +34,7 @@
     font-size:2em;
     text-align: center;
     align-items: center;
+    -webkit-text-stroke: 0.041875em rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 400px){

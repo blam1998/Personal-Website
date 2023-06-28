@@ -38,7 +38,7 @@
   margin: 10px 10px 10px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255,255,255);
+  background-color: #f6f1f1;
   border-radius: 6px;
   animation: Fadein 0.5s linear;
 }
@@ -65,12 +65,12 @@
   margin: 0rem 1rem;
   font-size: 1.25rem;
   font-weight: bold;
-  color: rgba(255,255,255);
+  color: black;
   border-radius: 10px;
 }
 
 .project-button:hover{
-  background-color: lightblue;
+  background-color: rgb(184, 255, 205);
 }
 
 .project-active{
