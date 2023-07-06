@@ -18,16 +18,15 @@
     padding: 1rem;
     margin: 0 1rem;
     flex-wrap:wrap;
-    width: 50vw;
-    max-width: 80vw;
+    width: 70%;
 }
 
 .Experience-Card-Picture{
     background-image: url('/public/SEOD.png');
     transform: scale(1,1);
     background-size: contain;
+    width: 25%;
     background-position: center;
-    max-width: 20vw;
     margin: 0 1rem;
 }
 

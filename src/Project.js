@@ -35,8 +35,8 @@ function Project(){
                 P R O J E C T S
             </h1>
             <div className = "button-div">
-                <button onClick = {(e) => buttonClick(e)} className = "project-button">Inprogress</button>
-                <button onClick = {(e) => buttonClick(e)} className = "project-button project-active">Completed</button>
+                <button onClick = {(e) => buttonClick(e)} className = "project-button left-right-underline">Inprogress</button>
+                <button onClick = {(e) => buttonClick(e)} className = "project-button project-active left-right-underline">Completed</button>
             </div>
             <div className = "Project-Page">
                 <div className = "project-storage inprogress" id = "inprogress-projects">

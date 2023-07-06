@@ -3,6 +3,9 @@
     position: relative;
     width: 80vw;
     gap: 50px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .About-Me-Detail-Picture{
@@ -40,6 +43,11 @@
 
 }
 
+.Description-Child::before{
+    content: "✶ ";
+    vertical-align: top;
+    position: relative;
+}
 
 .Skill-Element{
     padding: 0 1rem;

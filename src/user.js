@@ -75,10 +75,10 @@ class user extends Component{
                         
                     <div className = "User-Nav-Div-Flex">
                         <div id = "about" className = "User-Nav-Div">
-                            <NavLink  className = "User-Nav-Icons" to = "/" activestyle = "true" style = {{color: "white"}}>About</NavLink>
+                            <NavLink  className = "User-Nav-Icons left-right-underline" to = "/" activestyle = "true" style = {{color: "white"}}>About</NavLink>
                         </div>
                         <div id = "demo" className = "User-Nav-Div">
-                            <NavLink  className = "User-Nav-Icons" to = "/Demo" activestyle = "true" style = {{color: "white"}} >Demo</NavLink>
+                            <NavLink  className = "User-Nav-Icons left-right-underline" to = "/Demo" activestyle = "true" style = {{color: "white"}} >Demo</NavLink>
                         </div>
                     </div>
                     <div className = "navBarDropDown">

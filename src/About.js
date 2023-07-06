@@ -88,6 +88,7 @@ function About(){
                         <h1 className = "one-word-title" style = {{color: "black"}}>A B O U T </h1>
                         <h1 className = "one-word-title">M E</h1>
                     </div>
+                    <div style = {{height: "100px"}}> </div>
                     <AboutMe About = {AboutMeText} AboutText = {AboutText} Skill = {skillList}/>
                 </div>
 
@@ -102,7 +103,6 @@ function About(){
 
                 <div className = "Projects">
                     <Project/>
-                    <div className = "pre-footer" style = {{height: "100%", width: "100%"}}></div>
                 </div>
 
                 

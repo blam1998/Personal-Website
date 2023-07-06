@@ -9,6 +9,12 @@
   margin: 3rem 0rem 10rem 0rem;
 }
 
+.button-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 .project-storage{
   display: flex;
@@ -59,6 +65,7 @@
 
 
 .project-button{
+  position: relative;
   border: none;
   padding: 10px 10px;
   background-color: transparent;
@@ -69,11 +76,8 @@
   border-radius: 10px;
 }
 
-.project-button:hover{
-  background-color: rgb(184, 255, 205);
-}
-
 .project-active{
+  border-radius: 0;
   border-bottom: 3px white outset;
 }
 

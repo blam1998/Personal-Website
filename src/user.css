@@ -72,10 +72,7 @@
 }
 
 .User-Nav-Icons.active{
-    color: white;
-    background-color:rgb(147, 194, 255);
-    border-radius: 2vmin 2vmin 2vmin 2vmin;
-    z-index: 52;
+    border-bottom: 3px solid lightblue;
 }
 
 
