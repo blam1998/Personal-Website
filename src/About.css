@@ -20,16 +20,24 @@
 
 .Homepage-Body{
     display: flex;
-    min-height: 80vh;
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-    background-color: rgb(21, 0, 31, 0.7);
+    position: relative;
+}
+
+.Homepage-Body::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(132, 189, 255, 0.7);
+    z-index: -1;
 }
 
 
 .About-Me{
+    position: relative;
     display: flex;
     flex-direction: row;
     max-height: fit-content;
@@ -40,12 +48,8 @@
 }
 
 
-
-
 .About-me-bg{
-    background-color: lightblue;
     background-image: url("/public/Test.jpg");
-    background-blend-mode: hard-light;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -88,7 +92,7 @@
 .About-Me-Socials .Picture-Container{
     height: 20rem;
     width: 20rem;
-    border: 2px solid rgb(58, 183, 255);
+    border: 2px solid black;
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
@@ -101,6 +105,9 @@
 }
 
 .Work-Experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 200px 0px;
 }

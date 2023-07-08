@@ -10,7 +10,9 @@ class AboutMe extends Component{
     render(){
         return(
             <div className = "About-Me-Detail-Grid-Container">
-                <img className = "About-Me-Detail-Picture" src = "GrizzCub.jpg"></img>
+                <div className = "About-Me-Detail-Picture-Container">
+                    <img className = "About-Me-Detail-Picture" src = "GrizzCub.jpg"></img>
+                </div>
                 <div className = "About-Me-Description">
                     <div className = "Name"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Name: </span>{this.props.About.Name}</div>
                     <div className = "Gender"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Gender: </span>{this.props.About.Gender}</div>
@@ -20,9 +22,11 @@ class AboutMe extends Component{
                     <div className = "College"><span style = {{textDecoration: "none", fontWeight: "bold"}}>College: </span>{this.props.About.College}</div>
                     <div className = "Duration"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Duration: </span>{this.props.About.Duration}</div>
                     <div className = "Hobby"></div>
-                    <div className = "Skill"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Languages/Frameworks: </span>{this.props.Skill.map((x,i) => {
+                    <div className = "Skill"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Languages/Frameworks: </span>{
+                    this.props.Skill.map((x,i) => {
+                        
                         return(
-                            <div className = "Skill-Element">{x}</div>
+                            <span className = "Skill-Element">{x + (i === (this.props.Skill.length - 1)? "." : ",")}</span>
                         )
                     })}</div>
                 </div>

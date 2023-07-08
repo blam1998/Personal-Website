@@ -8,7 +8,7 @@ var LanguagesText = ["C++/C", "Python", "Javascript", "Java", "SQL"];
 
 var CoursesText = ["Artificial Intelligence", "Dynamic Programming", "Software Development", "Object Oriented Programming", "Algorithms and Data Structure"];
 
-var OtherSkillsText = ["Amazon S3", "Amazon Athena", "Pug", "HTML", "CSS", "Jquery", "Ajax", "Node.js", "Socket.io", "Django", "React", "Jira", "Github", "Wordpress", "Linux"];
+var OtherSkillsText = ["Amazon S3", "Amazon Athena", "HTML", "CSS", "Node.js", "Socket.io", "Django", "React", "Jira", "Github", "Wordpress", "Linux"];
 
 var AboutMe = {
     "Name": "Bao Lam Le",

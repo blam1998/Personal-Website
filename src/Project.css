@@ -15,15 +15,13 @@
   align-items: center;
 }
 
-
 .project-storage{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+  overflow-x: none;
+  gap: 10px;
   width: 100%;
-  height: fit-content;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 #inprogress-projects{
@@ -31,13 +29,11 @@
 }
 
 #complete-projects{
-  display: flex;
+  display: grid;
 }
 
 
 .project-item{
-  width: 30vw;
-  min-width: fit-content;
   height: auto;
   display: flex;
   padding: 10px 10px;
@@ -91,28 +87,32 @@
   .project-button{
     margin-bottom: 2rem;
   }
-
-  .project-item{
-    min-width: 50vw;
-    height: 80%;
-  }
   
 
   .Project-Page{
     margin: 0rem 0rem 0rem 0rem;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     align-items: center;
     justify-content: start;
   }
 
   .project-storage{
-    width: 80vw;
-    height: 80%;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: start;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-gap: 1em;
+    grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project-storage{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-gap: 1em;
+    grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+    width: 100%;
   }
 
 }

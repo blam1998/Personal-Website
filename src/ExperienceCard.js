@@ -11,7 +11,6 @@ class ExperienceCard extends Component{
     render(){
         return(
             <div className = "Experience-Card-Grid">
-                <img  className = "Experience-Card-Picture" src = {this.props.Work.Image}></img>
                 <div className = "Experience-Card-Flex">
                     <div className = "Job-Title">{this.props.Work.WorkTitle}</div>
                     <div className = "Job-Company"><span style = {{color: "black"}}>Company: </span>{this.props.Work.Company}</div>
@@ -22,6 +21,14 @@ class ExperienceCard extends Component{
                                 <div className = "Description-Child">
                                     {x}
                                 </div>)
+                        })}
+                    </div>
+                    <div style = {{margin: "0 auto", fontWeight: "bold", fontSize: "1.5rem"}}>Relevant Projects</div>
+                    <div className = "Job-Projects">
+                        {this.props.Work.Projects.map((x,i) => {
+                            return(
+                                <div className = "Description-Child">{x}</div>
+                            )
                         })}
                     </div>
                 </div>

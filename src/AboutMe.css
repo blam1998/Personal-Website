@@ -1,34 +1,52 @@
 .About-Me-Detail-Grid-Container{
     display: grid;
-    position: relative;
-    width: 80vw;
-    gap: 50px;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    grid-auto-rows: minmax(100px, auto);
+    width:80vw;
+    gap: 10px;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 10px;
+    font-family: Inter Tight;
+}
+
+
+.About-Me-Detail-Picture-Container{
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 3 /2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    background-color: #f6f1f1;
 }
 
 .About-Me-Detail-Picture{
+    margin: auto auto;
     display: flex;
+    width: 250px;
+    height: 250px;
     grid-area:1 / 1 / 3 / 2;
-    max-width: 100%;
     transform: scale(1,1);
-    align-items: center;
-    justify-content: center;
 }
 
+
 .About-Me-Description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    grid-area:1 / 2 / 3 / 4;
-    width: 60%;
+    border-radius: 10px;
+    padding: 0 2rem;
+    grid-column: 2 / 4;
+    grid-row: 1/3;
+    width: 100%;
     word-wrap: break-word;
     word-break: break-all;
     font-size: 1.75rem;
 }
 
 .About-Me-Text{
+    margin-top: 4rem;
+    border-top: 2px solid black;
+    padding-top: 2rem;
     font-size: 1.5rem;
     width: 100%;
     grid-area:3 / 1 / 4 / 4;
@@ -49,9 +67,9 @@
     position: relative;
 }
 
+
 .Skill-Element{
-    padding: 0 1rem;
-    text-decoration: underline;
+    padding: 0 1ch;
 }
 
 
@@ -63,10 +81,19 @@
 
 
 @media screen and (max-width: 900px){
+    .About-Me-Detail-Picture-Container{
+        display: none;
+    }
+
     .About-Me-Description{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         width: 100%;
+        padding: 0 0;
         grid-area:1 / 1 / 3 / 4;
+    }
+
+    .About-Me-Text{
+        font-size: 1.25rem;
     }
 
     .About-Me-Detail-Picture{

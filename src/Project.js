@@ -11,11 +11,11 @@ function buttonClick(event){
     const target = document.getElementById("inprogress-projects");
     const target2 = document.getElementById("complete-projects");
 
-    if (event.target.innerHTML === "Completed" && target2.style.display === "flex"){return;}
-    else if (event.target.innerHTML === "Inprogress" && target.style.display === "flex"){return;}
+    if (event.target.innerHTML === "Completed" && target2.style.display === "grid"){ console.log("HI1"); return;}
+    else if (event.target.innerHTML === "Inprogress" && target.style.display === "grid"){ console.log("HI2");return;}
 
-    target.style.display = target.style.display == "flex"? "none" : "flex";
-    target2.style.display = target2.style.display == "flex"? "none" : "flex";
+    target.style.display = target.style.display === "grid"? "none" : "grid";
+    target2.style.display = target2.style.display === "grid"? "none" : "grid";
 
     if (event.target.innerHTML === "Inprogress"){
         event.target.classList.add("project-active");
@@ -43,7 +43,7 @@ function Project(){
                     {
                         InprogressStorage.map((x,i) => {
                             return(
-                                <div className = "project-item inprogress">
+                                <div className = "project-item inprogress" style = {{animationDuration: ((i + 1) * 0.125).toString() + 's'}}>
                                     {x}
                                 </div>
                                 )
@@ -51,7 +51,7 @@ function Project(){
                     }
                 </div>
 
-                <div className = "project-storage complete" id = "complete-projects" style = {{display: "flex"}}>
+                <div className = "project-storage complete" id = "complete-projects" style = {{display: "grid"}}>
                     {
                         CompletedStorage.map((x,i) => {
                             return(

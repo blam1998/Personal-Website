@@ -189,11 +189,12 @@ const Work = {
     "WorkTitle": "Wordpress Developer Intern",
     "Company": "Seo'd Digital Marketing",
     "From": "02/2023",
-    "To": "",
-    "Description": ["In charge of designing and creating custom forms that is required by the client.",
-    "Is involved in the Wordpress website creation and delivering process.", 
-    "In charge of finding new ways to satisfy customer needs.",
-    "In charge of finding new ways to expand brand standing."],
+    "To": "Present",
+    "Description": ["In charge of designing and creating custom forms and interactive website components that is required by the client.",
+    "Is involved in the creation delivering process of websites by making responsive custom HTML components.", 
+    "Actively researching new ways to expand company brand standing and satisfy customer needs. " +
+    "Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",],
+    "Projects": ["Test Score Converter", "College Matcher", "Website Price Calculator"],
     "Image": "SEOD.png",
 }
 
