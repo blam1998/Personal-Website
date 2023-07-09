@@ -20,7 +20,7 @@ class AboutMe extends Component{
                     <div className = "Degree"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Degree: </span>{this.props.About.Degree}</div>
                     <div className = "Major"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Major: </span>{this.props.About.Major}</div>
                     <div className = "College"><span style = {{textDecoration: "none", fontWeight: "bold"}}>College: </span>{this.props.About.College}</div>
-                    <div className = "Duration"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Duration: </span>{this.props.About.Duration}</div>
+                    {/*<div className = "Duration"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Duration: </span>{this.props.About.Duration}</div>*/}
                     <div className = "Hobby"></div>
                     <div className = "Skill"><span style = {{textDecoration: "none", fontWeight: "bold"}}>Languages/Frameworks: </span>{
                     this.props.Skill.map((x,i) => {

@@ -105,11 +105,12 @@
 }
 
 .Work-Experience{
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 200px 0px;
+    padding: 100px 0px;
 }
 
 @media screen and (max-width: 1000px){
