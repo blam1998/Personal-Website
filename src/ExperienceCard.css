@@ -7,6 +7,7 @@
     max-width: 80vw;
     height: fit-content;
     margin: 5rem 0;
+    font-size: 1.5rem;
 }
 
 .Experience-Card-Flex{
@@ -23,22 +24,21 @@
 
 
 .Job-Title{
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 2.5rem;
     font-weight: bold;
     color: orange;
 
 }
 
 .Job-Company, .Job-Duration{
-    color: lightblue;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .Description-Child{
     word-wrap: break-word;
     word-wrap: break-word;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .Job-Projects{

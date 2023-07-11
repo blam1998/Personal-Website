@@ -88,7 +88,7 @@ function About(){
                         <h1 className = "one-word-title" style = {{color: "black"}}>A B O U T </h1>
                         <h1 className = "one-word-title">M E</h1>
                     </div>
-                    <div style = {{height: "100px"}}> </div>
+                    <div style = {{height: "50px"}}> </div>
                     <AboutMe About = {AboutMeText} AboutText = {AboutText} Skill = {skillList}/>
                 </div>
 

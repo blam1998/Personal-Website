@@ -24,17 +24,31 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
 }
+
+
 
 .Homepage-Body::after{
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(132, 189, 255, 0.7);
-    z-index: -1;
+    position: absolute;
+    background-color: rgb(152, 229, 255);
+    z-index: -2;
 }
 
+
+.About-Me::after{
+    content: '';
+    background-image: url("/public/About-me.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
 
 .About-Me{
     position: relative;
@@ -45,18 +59,10 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 
-.About-me-bg{
-    background-image: url("/public/Test.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -12;
-}
 
 .about-me-title{
     display: flex;
@@ -67,12 +73,18 @@
 }
 
 .About-Me-Detail{
-    padding: 200px 0;
+    padding: 100px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+.About-Me-Paper{
+    border: 2px solid black;
+    background-color: rgb(252, 121, 121);
 }
 
 .About-Me-Socials{
@@ -105,6 +117,7 @@
 }
 
 .Work-Experience{
+    margin-top: 200px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -157,6 +170,16 @@
 }
 
 
+.Projects::after{
+    content:'';
+    position: absolute;
+    background-image: url("/public/Project.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 
 .Projects{
     padding: 200px 0px;
@@ -165,9 +188,6 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-image: url("/public/Project.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 

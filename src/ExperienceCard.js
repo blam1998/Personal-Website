@@ -23,7 +23,7 @@ class ExperienceCard extends Component{
                                 </div>)
                         })}
                     </div>
-                    <div style = {{margin: "0 auto", fontWeight: "bold", fontSize: "1.5rem"}}>Relevant Projects</div>
+                    <div style = {{margin: "0 auto", fontWeight: "bold", fontSize: "2rem"}}>Relevant Projects</div>
                     <div className = "Job-Projects">
                         {this.props.Work.Projects.map((x,i) => {
                             return(

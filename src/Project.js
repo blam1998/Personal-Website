@@ -11,8 +11,8 @@ function buttonClick(event){
     const target = document.getElementById("inprogress-projects");
     const target2 = document.getElementById("complete-projects");
 
-    if (event.target.innerHTML === "Completed" && target2.style.display === "grid"){ console.log("HI1"); return;}
-    else if (event.target.innerHTML === "Inprogress" && target.style.display === "grid"){ console.log("HI2");return;}
+    if (event.target.innerHTML === "Completed" && target2.style.display === "grid"){  return;}
+    else if (event.target.innerHTML === "Inprogress" && target.style.display === "grid"){ return;}
 
     target.style.display = target.style.display === "grid"? "none" : "grid";
     target2.style.display = target2.style.display === "grid"? "none" : "grid";
@@ -43,7 +43,7 @@ function Project(){
                     {
                         InprogressStorage.map((x,i) => {
                             return(
-                                <div className = "project-item inprogress" style = {{animationDuration: ((i + 1) * 0.125).toString() + 's'}}>
+                                <div className = "project-item inprogress" >
                                     {x}
                                 </div>
                                 )
@@ -55,7 +55,7 @@ function Project(){
                     {
                         CompletedStorage.map((x,i) => {
                             return(
-                                <div className = "project-item completed" style = {{animationDuration: ((i + 1) * 0.125).toString() + 's'}}>
+                                <div className = "project-item completed" >
                                     {x}
                                 </div>
                             )
