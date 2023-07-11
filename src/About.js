@@ -1,9 +1,12 @@
 import './About.css';
 import {Footer} from "./Footer.js";
-import {AboutText, LanguagesText, OtherSkillsText} from './AboutText.js';
+import {AboutText, LanguagesText, OtherSkillsText, AboutMeText} from './AboutText.js';
+import {Work} from './Inprogress.js';
 import User from './user';
 import Project from './Project';
 import Fuse from 'fuse.js';
+import ExperienceCard from './ExperienceCard';
+import AboutMe from './AboutMe';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 var skillList = [];
@@ -79,25 +82,28 @@ function About(){
                         <div>Aspiring to become <span style = {{color: "orange"}}>Full Stack Software Developer</span></div>
                     </div>
                 </div>
-                <div className = "Skills">
-                    <div className = "skills-background"></div>
-                    <h1 className = "one-word-title" style = {{color: "White", fontWeight: "Bold", fontSize: "3rem"}}>S K I L L S</h1>
-                    <input placeholder = "Search" className = "skill-search" onChange = {(event) => {searchCard(event.target.value)}}></input>
-                    <div className = "skill-cards">
-                        {
-                            skillList.map((x,i) => {
-                                return(
-                                    <div className = "cards translate-cards" id = {x} index = {i}>{x}</div>
-                                )
-                            })
-                        }
+
+                <div className = "About-Me-Detail">
+                    <div className = "Flex-Title">
+                        <h1 className = "one-word-title" style = {{color: "black"}}>A B O U T </h1>
+                        <h1 className = "one-word-title">M E</h1>
                     </div>
+                    <div style = {{height: "50px"}}> </div>
+                    <AboutMe About = {AboutMeText} AboutText = {AboutText} Skill = {skillList}/>
+                </div>
+
+                <div style = {{height: "100px"}}> </div>
+                <div className = "Work-Experience">
+                    <div className = "Flex-Title">
+                        <h1 className = "one-word-title">W O R K </h1>
+                        <h1 className = "one-word-title">E X P E R I E N C E</h1>
+                    </div>
+                    <ExperienceCard Work = {Work}/>
                 </div>
 
 
                 <div className = "Projects">
                     <Project/>
-                    <div className = "pre-footer" style = {{height: "100%", width: "100%"}}></div>
                 </div>
 
                 

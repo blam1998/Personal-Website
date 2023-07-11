@@ -1,0 +1,60 @@
+.Experience-Card-Grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80vw;
+    height: fit-content;
+    margin: 5rem 0;
+    font-size: 1.5rem;
+}
+
+.Experience-Card-Flex{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 1rem;
+    flex-wrap:wrap;
+    width: 100%;
+}
+
+
+.Job-Title{
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: orange;
+
+}
+
+.Job-Company, .Job-Duration{
+    font-size: 1.75rem;
+}
+
+.Description-Child{
+    word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+}
+
+.Job-Projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 1000px){
+    .Experience-Card-Picture{
+        display: none;
+    }
+
+    .Experience-Card-Flex{
+        width: 80vw;
+    }
+}

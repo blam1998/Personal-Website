@@ -9,15 +9,19 @@
   margin: 3rem 0rem 10rem 0rem;
 }
 
-
-.project-storage{
+.button-div{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: fit-content;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+}
+
+.project-storage{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+  overflow-x: none;
+  gap: 10px;
+  width: 100%;
 }
 
 #inprogress-projects{
@@ -25,29 +29,34 @@
 }
 
 #complete-projects{
-  display: flex;
+  display: grid;
 }
 
 
 .project-item{
-  width: 30vw;
-  min-width: fit-content;
   height: auto;
   display: flex;
+  position: relative;
   padding: 10px 10px;
   margin: 10px 10px 10px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255,255,255);
+  background-color: #f6f1f1;
   border-radius: 6px;
-  animation: Fadein 0.5s linear;
+  transition: top ease 0.5s;
+  top: 0;
+  border: 2px solid transparent;
 }
 
 .project-item:hover{
-  background-image: url('/public/Skill-card.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url('/public/Skill-card.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -10px;
+    border: 2px solid rgb(64, 175, 64);
 }
+
+
 
 .project-name{
   text-align: center;
@@ -59,21 +68,19 @@
 
 
 .project-button{
+  position: relative;
   border: none;
   padding: 10px 10px;
   background-color: transparent;
   margin: 0rem 1rem;
   font-size: 1.25rem;
   font-weight: bold;
-  color: rgba(255,255,255);
+  color: black;
   border-radius: 10px;
 }
 
-.project-button:hover{
-  background-color: lightblue;
-}
-
 .project-active{
+  border-radius: 0;
   border-bottom: 3px white outset;
 }
 
@@ -87,28 +94,32 @@
   .project-button{
     margin-bottom: 2rem;
   }
-
-  .project-item{
-    min-width: 50vw;
-    height: 80%;
-  }
   
 
   .Project-Page{
     margin: 0rem 0rem 0rem 0rem;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     align-items: center;
     justify-content: start;
   }
 
   .project-storage{
-    width: 80vw;
-    height: 80%;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: start;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-gap: 1em;
+    grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project-storage{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+    grid-gap: 1em;
+    grid-template-rows: repeat(auto-fill, minmax(100px, auto));
+    width: 100%;
   }
 
 }

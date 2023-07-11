@@ -1,9 +1,11 @@
 
-:root{
-    --bg-color: rgb(20,20,20);
-    --card-color: rgb(23,23,23);
-    --background-gradient: linear-gradient(0deg, rgba(86, 139, 255, 0.65) 0%,  rgba(86, 139, 255, 0.15) 100%);
+.one-word-title{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 1rem;
 }
+
 
 .Homepage{
     height: fit-content;
@@ -14,40 +16,75 @@
     overflow-x: hidden;
 }
 
+
+
 .Homepage-Body{
     display: flex;
-    min-height: 80vh;
     height: fit-content;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-    background: var(--background-gradient);
+    position: relative;
+
 }
 
-.About-Me{
-    display: flex;
-    flex-direction: row;
-    max-height: fit-content;
-    height: 90vh;
+
+
+.Homepage-Body::after{
+    content: '';
     width: 100%;
-    align-items: center;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(152, 229, 255);
+    z-index: -2;
 }
 
-.About-me-bg{
+
+.About-Me::after{
+    content: '';
     background-image: url("/public/About-me.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -12;
+    z-index: -1;
 }
+
+.About-Me{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-height: fit-content;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
 
 .about-me-title{
     display: flex;
     flex-direction: column;
     font-size: 2.5rem;
     margin-left: 5rem;
+    width: 60%;
+}
+
+.About-Me-Detail{
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.About-Me-Paper{
+    border: 2px solid black;
+    background-color: rgb(252, 121, 121);
 }
 
 .About-Me-Socials{
@@ -67,7 +104,7 @@
 .About-Me-Socials .Picture-Container{
     height: 20rem;
     width: 20rem;
-    border: 2px solid rgb(58, 183, 255);
+    border: 2px solid black;
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
@@ -79,6 +116,15 @@
     object-fit: cover;
 }
 
+.Work-Experience{
+    margin-top: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0px;
+}
 
 @media screen and (max-width: 1000px){
     .About-Me{
@@ -91,6 +137,7 @@
     }
 
     .about-me-title{
+        display: none;
         text-align: center;
     }
 
@@ -122,19 +169,17 @@
     background-color: rgba(55, 0, 255, 0.05);
 }
 
-.skills-background{
-    background-image: url("/public/Skill.png");
-    background-size: cover;
-    z-index: -1;
+
+.Projects::after{
+    content:'';
+    position: absolute;
+    background-image: url("/public/Project.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    position: absolute;
-    background-repeat: no-repeat;
+    z-index: -1;
 }
 
-.skill-cards:hover{
-    overflow-y: visible;
-}
 
 .Projects{
     padding: 200px 0px;
@@ -143,74 +188,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    background-image: url("/public/Project.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
-
-.skill-cards{
-    display: flex;
-    flex-direction: row;
-    overflow-y: hidden;
-    max-height: 60vh;
-    max-width: 80%;
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.cards{
-    width: 20%;
-    min-width: fit-content;
-    padding: 5px 5px;
-    height: 125px;
-    background-color: rgb(255,255,255);
-    color: black;
-    font-weight: bold;
-    margin-top: auto;
-    display: flex;
-    margin: 10px 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    word-wrap: break-word;
-    font-size: 1.25rem;
-    transition: width 2s;
-}
-
-.skill-search{
-    width: 80%;
-    height: 3rem;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-size: 1.25rem;
-    margin-top: 3rem;
-}
-
-
-.card-highlight{
-    background:linear-gradient(0.25turn, rgba(255, 255, 255, 0.8) 0%, rgb(173, 216, 230,0.8) 100%);
-    animation: glow 2s linear infinite;
-}
-
-@keyframes glow {
-0% {
-    box-shadow: 0 0 5px #fff, 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgb(173, 216, 230,0.8);
-}
-50% {
-    box-shadow: 0 0 10px #fff, 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgb(173, 216, 230,0.8);
-}
-100% {
-    box-shadow: 0 0 5px #fff, 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgb(173, 216, 230,0.8);
-}
-}
-
-
 
 
 @media screen and (min-width: 650px) and (max-width: 900px){
@@ -222,6 +200,10 @@
 }
 
 @media screen and (max-width: 650px){
+    .one-word-title{
+        font-size: 2.25rem;
+    }
+
     .About-Me-Socials .Picture-Container{
         height: 10rem;
         width: 10rem;
@@ -234,6 +216,7 @@
     .Name {
         margin-top: 1.5rem;
     }
+
     .Homepage-Body{
         display: flex;
         height: fit-content;
@@ -249,34 +232,6 @@
         margin-top: 2.5rem;
         margin-left: 0rem;
     }
-
-    .cards{
-        min-width: 30%;
-        height: 10vh;
-    }
-    
-    .skill-cards{
-        overflow-y: scroll;
-        overflow-x: none;
-        flex-wrap: wrap;
-        width: 80vw;
-        text-align: center;
-        justify-content: center;
-        text-overflow: ellipsis;
-    }
-
-    .Skills{
-        min-height: 50vh;
-    }
 }
 
 
-.pre-footer{
-    background-image: url("/public/Prefooter.png");
-    background-size: cover;
-    background-position: bottom;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}

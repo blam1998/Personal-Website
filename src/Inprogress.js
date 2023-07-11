@@ -9,24 +9,6 @@
 
 const Inprogress = [
     {
-        "ProjectName": "Personal Website (This Website)",
-        "Date": "10/28/2022 - ",
-        "Summary": "Refactored and repurposed my old website to showcase my work.",
-        "Image": "./ReactWebsite.jpg",
-        "Id": "00",
-        "ShortDescription": ["The website is now scalable, more content can be added just by simply adding to existing javascript variables.",
-         "Website is now functional for both computer users and phone users of varying screen resolutions.",
-         "Made videos within project tab instantly stop after closing project popups to ensure the best user experiences.",
-         "Redesigned website's layout to improve user experience. -(06/2023)",
-         "Currently adding more features and refining the layout of the website.",
-         "Last refactored on 06/21/2023."
-        ],
-        "Github": "https://github.com/blam1998/Personal-Website",
-        "Languages": ["React", "Javascript", "CSS", "React-Router-Dom"],
-        "VideoSrc": "#",
-        "Demo": "",
-    },
-    {
         "ProjectName": "Specialized Todo List (Backend)",
         "Date": "4/24/2023 - ",
         "Summary": "I will be making a Todo list with user login using google sign in and I will be keeping the user tasks within a MySQL Database.",
@@ -47,6 +29,24 @@ const Inprogress = [
 
 
 const Completed = [
+    {
+        "ProjectName": "Personal Website (This Website)",
+        "Date": "10/28/2022 - ",
+        "Summary": "Refactored and repurposed my old website to showcase my work.",
+        "Image": "./ReactWebsite.jpg",
+        "Id": "19",
+        "ShortDescription": ["The website is now scalable, more content can be added just by simply adding to existing javascript variables.",
+         "Website is now functional for both computer users and phone users of varying screen resolutions.",
+         "Made videos within project tab instantly stop after closing project popups to ensure the best user experiences.",
+         "Redesigned website's layout to improve user experience. -(06/2023)",
+         "Currently adding more features and refining the layout of the website.",
+         "Last refactored on 06/27/2023."
+        ],
+        "Github": "https://github.com/blam1998/Personal-Website",
+        "Languages": ["AWS Amplify", "React", "Javascript", "CSS", "React-Router-Dom"],
+        "VideoSrc": "#",
+        "Demo": "",
+    },
     {
         "ProjectName": "Online Connect 4",
         "Date": "12/2022 - 01/2023",
@@ -182,7 +182,20 @@ const Completed = [
         "VideoSrc": "#",
         "Demo": "1",
     },
-    //18
+    //20
 ]
 
-export {Inprogress as Inprogress, Completed as Completed}
+const Work = {
+    "WorkTitle": "Wordpress Developer Intern",
+    "Company": "Seo'd Digital Marketing",
+    "From": "02/2023",
+    "To": "Present",
+    "Description": ["In charge of designing and creating custom forms and interactive website components that is required by the client.",
+    "Is involved in the creation delivering process of websites by making responsive custom HTML components.", 
+    "Actively researching new ways to expand company brand standing and satisfy customer needs. " +
+    "Research material includes but not limited to, website layouts, services and products offered, and better advertisement methods.",],
+    "Projects": ["Test Score Converter", "College Matcher", "Website Price Calculator"],
+    "Image": "SEOD.png",
+}
+
+export {Inprogress as Inprogress, Completed as Completed, Work as Work}
