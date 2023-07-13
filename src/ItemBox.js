@@ -135,7 +135,7 @@ class ItemBox extends Component{
                         <b>Date: </b>{this.props.Date}
                     </div>
                     <div className = "ItemBox-Summary">
-                        <b>Summary: </b>{this.props.Summary}
+                        <b>Summary: </b><span className = "normal-text">{this.props.Summary}</span>
                     </div>
                     
                     <GetShortDescription ShortDescription = {this.props.ShortDescription}/>
