@@ -27,7 +27,16 @@
 
 }
 
-
+.background-fixed{
+    background-image: url("/public/low-poly-grid-haikei.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+}
 
 .Homepage-Body::after{
     content: '';
@@ -41,7 +50,7 @@
 
 .About-Me::after{
     content: '';
-    background-image: url("/public/About-me.png");
+    background-image: url("/public/blurry-gradient-haikei.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -102,8 +111,8 @@
 }
 
 .About-Me-Socials .Picture-Container{
-    height: 20rem;
-    width: 20rem;
+    height: 200px;
+    width: 200px;
     border: 2px solid black;
     background-color: white;
     border-radius: 50%;
@@ -133,7 +142,6 @@
         min-height: 30vh;
         align-items: center;
         justify-content: center;
-        margin-bottom: 7.5rem;
     }
 
     .about-me-title{
@@ -173,7 +181,7 @@
 .Projects::after{
     content:'';
     position: absolute;
-    background-image: url("/public/Project.png");
+    /*background-image: url("/public/Project.png");*/
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
