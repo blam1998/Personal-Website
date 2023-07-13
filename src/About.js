@@ -63,6 +63,7 @@ function About(){
 
     return(
         <div className = "Homepage">
+            <div className = "background-fixed"></div>
             <div className = "Navigation-Bar">
                 <User/>
             </div>
@@ -73,12 +74,12 @@ function About(){
                         <div className = "Picture-Container">
                             <img className = "Picture" src = "./favicon.ico"></img>
                         </div>
-                        <div className = "Name">Bao Lam Le</div>
-                        <div style = {{fontSize: "1.25rem"}}>Bachelor of Science, Computer Science</div>
-                        <div style = {{fontSize: "1.25rem"}}>University of California, <span style = {{color: "blue"}}>Riverside</span></div>
+                        <div className = "Name title">Bao Lam Le</div>
+                        <div className = "normal-text" style = {{margin: "0 auto", textAlign: "center"}}>Bachelor of Science, Computer Science</div>
+                        <div className = "normal-text" style = {{margin: "0 auto", textAlign: "center"}}>University of California, <span style = {{color: "blue"}}>Riverside</span></div>
                     </div>
                     <div className = "about-me-title">
-                        <div><span style = {{color: "lightblue"}}>Front-end</span> Software Developer</div>
+                        <div><span style = {{color: "white"}}>Front-end</span> Software Developer</div>
                         <div>Aspiring to become <span style = {{color: "orange"}}>Full Stack Software Developer</span></div>
                     </div>
                 </div>

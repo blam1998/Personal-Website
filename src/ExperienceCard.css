@@ -33,6 +33,7 @@
 .Description-Child{
     word-wrap: break-word;
     word-wrap: break-word;
+    font-size: 1.5rem;
 }
 
 .Job-Projects{
@@ -54,9 +55,15 @@
 
     .Job-Projects{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: left;
-        align-items: left;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Description-Child{
+        font-size: 1.125rem;
     }
 }

@@ -9,12 +9,12 @@
 
 const Inprogress = [
     {
-        "ProjectName": "Specialized Todo List (Backend)",
+        "ProjectName": "Todo List (Backend)",
         "Date": "4/24/2023 - ",
-        "Summary": "I will be making a Todo list with user login using google sign in and I will be keeping the user tasks within a MySQL Database.",
+        "Summary": "I will be making a Todo list with user login using google sign in and I will be keeping the user tasks within a MariaDB Database using Django.",
         "Image": "./Todo.jpg",
         "Id": "01",
-        "ShortDescription": ["I will be making a friendly UI for users to help them navigate the program.",
+        "ShortDescription": ["I will be making a friendly UI for users to help them navigate the application.",
         "I will have to make sure that my MySQL database is safe from user inputs.",
         "I will need to integrate google sign in API into my web application.",
         "Currently on hold."
@@ -32,7 +32,7 @@ const Completed = [
     {
         "ProjectName": "Personal Website (This Website)",
         "Date": "10/28/2022 - ",
-        "Summary": "Refactored and repurposed my old website to showcase my work.",
+        "Summary": "Refactored my old website to showcase my work.",
         "Image": "./ReactWebsite.jpg",
         "Id": "19",
         "ShortDescription": ["The website is now scalable, more content can be added just by simply adding to existing javascript variables.",
@@ -40,10 +40,10 @@ const Completed = [
          "Made videos within project tab instantly stop after closing project popups to ensure the best user experiences.",
          "Redesigned website's layout to improve user experience. -(06/2023)",
          "Currently adding more features and refining the layout of the website.",
-         "Last refactored on 06/27/2023."
+         "Last major change on 07/13/2023."
         ],
         "Github": "https://github.com/blam1998/Personal-Website",
-        "Languages": ["AWS Amplify", "React", "Javascript", "CSS", "React-Router-Dom"],
+        "Languages": ["AWS Amplify", "React", "Javascript", "CSS", "HTML"],
         "VideoSrc": "#",
         "Demo": "",
     },
@@ -57,7 +57,7 @@ const Completed = [
         "The website has an online chat room that send chat messages to other user within the room.",
         "The game has a built in timer that count down after the first turn. If a player's timer runs out, that player loses."],
         "Github": "https://github.com/blam1998/Connect-4",
-        "Languages": ["React", "Javascript", "CSS", "Socket.io", "React"],
+        "Languages": ["React", "Javascript", "CSS", "Socket.io", "HTML"],
         "VideoSrc": [["Demo of Connect 4 Website", "https://youtu.be/17QZKtHOtxY"]],
         "Demo": "",
     },
