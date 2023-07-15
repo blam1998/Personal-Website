@@ -126,16 +126,16 @@ class ItemBox extends Component{
         return(
             <div className = "ItemBox-Outer-Frame">
                 <div className = "ItemBox-Inner-Frame">
-                    <div className = "ItemBox-Project-Name">
+                    <div className = "ItemBox-Project-Name title">
                         {this.props.ProjectName}
                         <GetGithub Github = {this.props.Github}/>
                     </div>
                     <GetSkillsFlair Languages = {this.props.Languages} />
                     <div className = "ItemBox-Date">
-                        <b>Date: </b>{this.props.Date}
+                        <b className = "title">Date: </b> <span className = "normal-text">{this.props.Date}</span>
                     </div>
                     <div className = "ItemBox-Summary">
-                        <b>Summary: </b><span className = "normal-text">{this.props.Summary}</span>
+                        <b className = "title">Summary: </b><span className = "normal-text">{this.props.Summary}</span>
                     </div>
                     
                     <GetShortDescription ShortDescription = {this.props.ShortDescription}/>

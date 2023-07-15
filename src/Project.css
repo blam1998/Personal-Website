@@ -81,8 +81,8 @@
 }
 
 .project-active{
-  border-radius: 0;
-  border-bottom: 3px white outset;
+  border-radius: 10px;
+  background-color: rgb(94, 215, 255);
 }
 
 
