@@ -19,7 +19,6 @@
     word-wrap:break-word;
     padding-top: 8px;
     width: 100%;
-    font-size: 1.5rem;
 }
 
 .ItemBox-Project-Name .fa.fa-github{
@@ -36,7 +35,7 @@
 }
 
 .ItemBox-Languages-Elements{
-    color: lightblue;
+    color: rgb(20, 196, 255);
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
