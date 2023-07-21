@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    color: var(--text-color);
 
 }
 
@@ -43,7 +44,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgb(152, 229, 255);
+    background-color: var(--bg-color);
     z-index: -2;
 }
 
@@ -51,6 +52,7 @@
 .About-Me::after{
     content: '';
     background-image: url("/public/blurry-gradient-haikei.png");
+    background-color: var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -83,12 +85,13 @@
 
 .About-Me-Detail{
     padding: 100px 0;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: var(--bg-color);
+    margin: 4rem 2rem;
 }
 
 .About-Me-Paper{
@@ -113,7 +116,7 @@
 .About-Me-Socials .Picture-Container{
     height: 200px;
     width: 200px;
-    border: 2px solid black;
+    border: 2px solid var(--accent-color);
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
@@ -126,13 +129,14 @@
 }
 
 .Work-Experience{
-    margin-top: 200px;
-    background-color: white;
+    margin: 0rem 2rem;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
     padding: 100px 0px;
+    color: var(--text-color);
 }
 
 @media screen and (max-width: 1000px){
@@ -163,18 +167,6 @@
     font-size: 2.5rem;
     margin: 0 0;
     padding: 0 0;
-}
-
-.Skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    min-height: 100vh;
-    width: 100%;
-    padding-bottom: 200px;
-    background-color: rgba(55, 0, 255, 0.05);
 }
 
 

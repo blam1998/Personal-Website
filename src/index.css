@@ -19,7 +19,11 @@ main{
 }
 
 :root{
-  --bg-color: rgb(20,20,20);
+  --bg-color: #050505;
+  --text-color: #fafafa;
+  --primary-color: #407F05;
+  --secondary-color: #132020;
+  --accent-color: #B0F372;
   --card-color: rgb(23,23,23);
   --background-gradient: linear-gradient(0deg, rgba(136, 174, 255, 0.65) 0%,  rgba(136, 174, 255, 0.15) 100%);
   --home-background: linear-gradient(0deg, rgba(2, 78, 255, 0.35) 0%,  rgba(2, 78, 255, 0.15) 100%);
@@ -40,8 +44,8 @@ button:hover{
 
 .one-word-title{
   text-transform: none;
-  -webkit-text-stroke: 0.041875em rgb(0, 0, 0);
-  color: #000000;
+  -webkit-text-stroke: 0.041875em var(--text-color);
+  color: var(--text-color);
   letter-spacing: 0.01em;
   font-family: YAEkSzqSKbA-0;
   line-height: 1.18751732em;
@@ -78,7 +82,7 @@ img{
   width: 100%;
   bottom: 0;
   left: 0;
-  border-bottom: solid 3px lightblue;
+  border-bottom: solid 3px var(--accent-color);
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   transform-origin: 100% 50%;
@@ -96,7 +100,7 @@ img{
 }
 
 .title{
-  font-size: 1.75rem;
+  font-size: 1.65rem;
 }
 
 
