@@ -13,8 +13,8 @@ class ExperienceCard extends Component{
             <div className = "Experience-Card-Grid">
                 <div className = "Experience-Card-Flex">
                     <div className = "Job-Title header">{this.props.Work.WorkTitle}</div>
-                    <div className = "Job-Company normal-text" ><span  className = "title" style = {{color: "black"}}>Company: </span>{this.props.Work.Company}</div>
-                    <div className = "Job-Duration normal-text"><span className = "title" style = {{color: "black"}}>Duration: </span>{this.props.Work.From + " - " + this.props.Work.To}</div>
+                    <div className = "Job-Company normal-text" ><span  className = "title">Company: </span>{this.props.Work.Company}</div>
+                    <div className = "Job-Duration normal-text"><span className = "title">Duration: </span>{this.props.Work.From + " - " + this.props.Work.To}</div>
                     <div className = "Description">
                         {this.props.Work.Description.map((x,i) => {
                             return (

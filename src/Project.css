@@ -42,11 +42,10 @@
   margin: 10px 10px 10px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: #f6f1f1;
+  background-color: var(--secondary-color);
   border-radius: 6px;
-  transition: top ease 0.5s;
+  transition: top ease 0.5s, box-shadow ease 0.5s;
   top: 0;
-  border: 2px solid transparent;
 }
 
 .project-item:hover{
@@ -54,7 +53,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     top: -10px;
-    border: 2px solid rgb(64, 175, 64);
+    box-shadow: 0px 5px 30px var(--accent-color);
 }
 
 
@@ -76,13 +75,14 @@
   margin: 0rem 1rem;
   font-size: 1.25rem;
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
   border-radius: 10px;
 }
 
 .project-active{
   border-radius: 10px;
-  background-color: rgb(94, 215, 255);
+  background-color: var(--primary-color);
+  box-shadow: 0px 5px 15px var(--accent-color); 
 }
 
 
@@ -114,7 +114,7 @@
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .project-storage{
     display: grid;
     grid-template-columns: repeat(1, minmax(100px, 1fr));
