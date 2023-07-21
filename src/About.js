@@ -97,7 +97,7 @@ function About(){
                 <div className = "Work-Experience">
                     <div className = "Flex-Title">
                         <h1 className = "one-word-title">W O R K </h1>
-                        <h1 className = "one-word-title">E X P E R I E N C E</h1>
+                        <h1 className = "one-word-title">H I S T O R Y</h1>
                     </div>
                     <ExperienceCard Work = {Work}/>
                 </div>

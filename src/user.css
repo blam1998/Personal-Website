@@ -72,7 +72,7 @@
 }
 
 .User-Nav-Icons.active{
-    border-bottom: 3px solid lightblue;
+    border-bottom: 3px solid var(--accent-color);
 }
 
 

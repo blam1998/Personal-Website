@@ -49,7 +49,6 @@
 }
 
 .project-item:hover{
-    background-image: url('/public/Skill-card.png');
     background-size: cover;
     background-repeat: no-repeat;
     top: -10px;

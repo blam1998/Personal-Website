@@ -28,6 +28,12 @@
 }
 
 
+.Description{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
 
 .Description-Child{
     word-wrap: break-word;
@@ -37,7 +43,7 @@
 
 .Job-Projects{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -62,6 +68,22 @@
 }
 
 @media screen and (max-width: 700px){
+    .Experience-Card-Grid{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        height: fit-content;
+        margin: 5rem 0;
+    }
+
+    .Job-Projects{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: start;
+    }
+
     .Description-Child{
         font-size: 1.125rem;
     }
