@@ -7,6 +7,12 @@
 }
 
 
+#Front-end{
+    background: -webkit-linear-gradient(0.10turn ,rgb(101, 180, 101), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .Homepage{
     height: fit-content;
     z-index: 1;

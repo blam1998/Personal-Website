@@ -1,5 +1,5 @@
 var AboutText = "I'm a Computer Science graduate from University of California, Riverside. I'm currently working as a Software Development Intern for Seod Digital Marketing. " 
-+ "I'm doing a lot of front-end work right now during my internship but I'm trying to do other projects on the side that involves back-end material hoping to learn from it. "
++ "I'm doing a lot of front-end work right now during my internship but I'm trying to do other projects in my free time that involves back-end material hoping to learn from it. "
 + " If you have any question or comments, feel free to contact me via email."
 
 var JobText = "I'm currently working as a freelance software developer. But any job inquiry is welcome."
