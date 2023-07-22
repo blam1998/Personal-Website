@@ -1,4 +1,5 @@
 import './About.css';
+import './firefly.css';
 import {Footer} from "./Footer.js";
 import {AboutText, LanguagesText, OtherSkillsText, AboutMeText} from './AboutText.js';
 import {Work} from './Inprogress.js';
@@ -8,6 +9,13 @@ import Fuse from 'fuse.js';
 import ExperienceCard from './ExperienceCard';
 import AboutMe from './AboutMe';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+
+
+var tempArray = new Array();
+for (let i = 0; i < 25; i++){
+    tempArray.push(new Object());
+}
+
 
 var skillList = [];
 
@@ -23,40 +31,6 @@ OtherSkillsText.map((x,i) => {
     skillList.push(x);
 })
 
-const options = {
-    includeScore: true,
-    keys: ['content']
-};
-
-const fuse = new Fuse(searchList, options);
-
-function searchCard(content){
-    const result = fuse.search(content);
-    const highLight = [];
-
-    for (var i = 0; i < result.length; i++){
-        if (result[i].score < 0.3){
-            highLight.push(result[i].item.content);
-        }
-    }
-
-    const target = document.getElementsByClassName("skill-cards")[0];
-    target.scrollTop = 0;
-    target.scrollLeft = 0;
-
-    highLight.map((x,i) => {
-        document.getElementById(x).classList.add('card-highlight');
-        target.insertBefore(document.getElementById(x), target.firstChild);
-    })
-
-    const filtered = skillList.filter(item => !highLight.includes(item));
-    filtered.map((x) => {
-        if (document.getElementById(x).classList.contains('card-highlight')){
-            document.getElementById(x).classList.remove('card-highlight');
-        }
-    });
-
-}
 
 function About(){
     
@@ -69,7 +43,13 @@ function About(){
             </div>
             <div className = "Homepage-Body" id = "homepage-body-color2">
                 <div className = "About-Me">
-                    <div className = "About-me-bg"></div>
+                    <div className = "firefly-container">
+                        {
+                            tempArray.map((x,i) => {
+                                return(<div className = "firefly" key = {"firefly-" + i}></div>)
+                            })
+                        }
+                    </div>
                     <div className = "About-Me-Socials">
                         <div className = "Picture-Container">
                             <img className = "Picture" src = "./favicon.ico"></img>
@@ -79,7 +59,7 @@ function About(){
                         <div className = "normal-text" style = {{margin: "0 auto", textAlign: "center"}}>University of California, <span style = {{color: "blue"}}>Riverside</span></div>
                     </div>
                     <div className = "about-me-title">
-                        <div><span style = {{color: "white"}}>Front-end</span> Software Developer</div>
+                        <div><span id = "Front-end">Front-end</span> Software Developer</div>
                         <div>Aspiring to become <span style = {{color: "orange"}}>Full Stack Software Developer</span></div>
                     </div>
                 </div>

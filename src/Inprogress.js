@@ -38,9 +38,8 @@ const Completed = [
         "ShortDescription": ["The website is now scalable, more content can be added just by simply adding to existing javascript variables.",
          "Website is now functional for both computer users and phone users of varying screen resolutions.",
          "Made videos within project tab instantly stop after closing project popups to ensure the best user experiences.",
-         "Redesigned website's layout to improve user experience. -(06/2023)",
          "Currently adding more features and refining the layout of the website.",
-         "Last major change on 07/13/2023."
+         "Last major change on 07/21/2023."
         ],
         "Github": "https://github.com/blam1998/Personal-Website",
         "Languages": ["AWS Amplify", "React", "Javascript", "CSS", "HTML"],
