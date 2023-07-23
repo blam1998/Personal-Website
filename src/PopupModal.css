@@ -8,19 +8,16 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
     align-items: center;
 }
 
 .Popup-Modal-Inner{
     z-index: 1;
     position: relative;
-    margin: 10vh auto;
+    margin: 5rem auto;
     padding:3% 3% 3% 3%;
-    width:80%;
-    min-height:30vh;
-    height:60%;
+    width:90%;
+    height:70%;
     overflow: auto;
     background-color: inherit;
     background-color: rgba(24, 23, 23);
@@ -29,8 +26,9 @@
 
 .Popup-Modal-Close{
     position: absolute;
-    top:0;
-    right:0;
+    top:1.5%;
+    right:0.75%;
+    font-weight: bold;
     box-sizing:content-box;
     border: 5px 5px 5px 5px;
     padding: 2px 10px 2px 10px;
@@ -43,7 +41,7 @@
     border: 5px 5px 5px 5px;
     padding: 2px 10px 2px 10px;
     font-weight:bold;
-    color:#000;
+    color: var(--accent-color);
     cursor: pointer;
 }
 

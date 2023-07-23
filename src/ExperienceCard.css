@@ -35,10 +35,24 @@
 }
 
 
-.Description-Child{
-    word-wrap: break-word;
-    word-wrap: break-word;
+li.custom-child{
+    list-style-type: none;
     font-size: 1.5rem;
+    height: 100%;
+    vertical-align: top;
+    width: 100%;
+}
+
+li.custom-child > div{
+    word-wrap: break-word;
+    display:inline-block;
+    height:100%;
+    width:5%;
+    vertical-align:top;
+}
+
+li.custom-child > div.normal-text{
+    width: 95%;
 }
 
 .Job-Projects{
@@ -81,10 +95,21 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: left;
-        align-items: start;
+        align-items: flex-start;
     }
 
     .Description-Child{
         font-size: 1.125rem;
+    }
+
+
+    li.custom-child > div{
+        width:15%;
+        height: 100%;
+        vertical-align:top;
+    }
+    
+    li.custom-child > div.normal-text{
+        width: 85%;
     }
 }

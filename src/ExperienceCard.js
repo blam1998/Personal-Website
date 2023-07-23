@@ -29,7 +29,7 @@ class ExperienceCard extends Component{
                 <div className = "Description">
                     {this.props.Work.Description.map((x,i) => {
                         return(
-                            <div className = "Description-Child">{x}</div>
+                            <li className = "custom-child"><div>✶</div><div className = "normal-text">{x}</div></li>
                         )
                     })}
                 </div>

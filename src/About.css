@@ -42,7 +42,7 @@
     height: 100vh;
     position: fixed;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.5;
 }
 
 .Homepage-Body::after{
@@ -91,13 +91,13 @@
 
 .About-Me-Detail{
     padding: 100px 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
-    margin: 4rem 2rem;
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 .About-Me-Paper{
@@ -136,11 +136,11 @@
 
 .Work-Experience{
     margin: 0rem 2rem;
-    background-color: var(--bg-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
     padding: 100px 0px;
     color: var(--text-color);
 }

@@ -73,7 +73,6 @@ function About(){
                     <AboutMe About = {AboutMeText} AboutText = {AboutText} Skill = {skillList}/>
                 </div>
 
-                <div style = {{height: "100px"}}> </div>
                 <div className = "Work-Experience">
                     <div className = "Flex-Title">
                         <h1 className = "one-word-title">W O R K </h1>
