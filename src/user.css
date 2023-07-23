@@ -34,7 +34,10 @@
     font-size:2em;
     text-align: center;
     align-items: center;
-    -webkit-text-stroke: 0.041875em rgb(255, 255, 255);
+    -webkit-text-stroke: transparent;
+    background: -webkit-linear-gradient(0.10turn ,rgb(101, 180, 101), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 400px){
@@ -133,3 +136,6 @@
         display: flex;
     }
 }
+
+/*===================Animations==================*/
+

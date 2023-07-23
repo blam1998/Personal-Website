@@ -63,14 +63,15 @@ class user extends Component{
             <div className = "Intro">
                 <div className = "User-Intro-Frame">
                     <div className = "UserName one-word-title">
-                        <motion.div
+                        {/*<motion.div
                         variants = {this.container}
                         initial = "hidden"
                         animate = "show">
                             {this.name.map((x,i) => {
                                 return(<motion.a key = {i} variants = {this.item}>{x}</motion.a>)
                             })}
-                        </motion.div>
+                        </motion.div>*/}
+                        Kazekito
                     </div>
                         
                     <div className = "User-Nav-Div-Flex">
