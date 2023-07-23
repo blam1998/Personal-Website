@@ -36,10 +36,12 @@ $color: lightblue;
     }
 
     .firefly::after{
-      background: white;
-      opacity: 0;
+        /*
+      background: blue;
+      opacity: 1.5;
       box-shadow: 0 0 0vw 0vw $color;
       animation: drift ease alternate infinite, flash ease infinite;
+      */
     }
 
 

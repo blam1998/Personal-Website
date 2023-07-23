@@ -39,7 +39,7 @@
     font-size: 1.5rem;
     width: 100%;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
     flex-basis: 60%;
 }
 
@@ -63,7 +63,6 @@
 
 
 /*=================================== Skill Display ===================================*/
-
 .Skill-Outer{
     margin-top: 2rem;
     width: 100%;
