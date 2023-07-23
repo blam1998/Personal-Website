@@ -30,7 +30,7 @@
     width: 100%;
     flex-basis: 40%;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
     font-size: 1.75rem;
     background-color: var(--primary-color);
 }
@@ -64,11 +64,13 @@
 
 /*=================================== Skill Display ===================================*/
 .Skill-Outer{
-    margin-top: 2rem;
+    margin: 2rem auto;
     width: 100%;
     text-align: center;
-    word-break: break-word;
-    word-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 /*=================================== Media Display ===================================*/
@@ -101,7 +103,7 @@
         width: fit-content;
         flex-basis: 100%;
         word-wrap: break-word;
-        word-break: break-all;
+        word-break: break-word;
         font-size: 1.75rem;
         background-color: var(--primary-color);
     }
@@ -111,7 +113,7 @@
         font-size: 1.5rem;
         width: 100%;
         word-wrap: break-word;
-        word-break: break-all;
+        word-break: break-word
     }
 
     .About-Me-Text{

@@ -18,7 +18,7 @@ var AboutMe = {
     "Major": "Computer Science",
     "Duration": "09/2017 - 12/2021",
     "Gender": "Male",
-    "Hobby": ["Reading", "Drawing", "Competitive Online Games"]
+    "Hobby": " Coding, Drawing, Competitive Online Games."
 }
 
 export {AboutText as AboutText, JobText as JobText, LanguagesText as LanguagesText, CoursesText as CoursesText, OtherSkillsText as OtherSkillsText, AboutMe as AboutMeText};
